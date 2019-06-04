@@ -1,5 +1,5 @@
 //參照雅瓊範例
-@mixin formStyle($f_color:$color-word, $f_border:$color-gray, $f_radius:5px) {
+@mixin formStyle($f_color:$color-word, $f_border:$color-gray, $f_radius:2px) {
     color: $f_color;
     font-size: 1em;
     border: 1px solid $f_border;
@@ -181,7 +181,7 @@ input[type="file"] {
 }
 button,
 input[type="button"],
-    {
+{
     @extend %btn;
     @include btn_setting($form-focus, #FFF);
 }

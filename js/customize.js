@@ -1,6 +1,6 @@
 // 自行加入的JS請寫在這裡
 $(function() {
-    
+
     // lazyload  
     //可以指定你想要的元素做lazyload
     $("img").lazyload({ effect: "fadeIn" });
@@ -15,7 +15,7 @@ $(function() {
         cssEase: 'ease'
     });
     // 首頁輪播
-     $('.mpSlider').slick({
+    $('.mpSlider').slick({
         dots: true,
         arrow: true,
         infinite: true,
@@ -83,7 +83,7 @@ $(function() {
         infinite: true
     });
     $('.Slider-nav').slick({
-        slidesToShow: 3,
+        slidesToShow: 4,
         slidesToScroll: 1,
         asNavFor: '.Slider-for',
         dots: true,
@@ -239,7 +239,7 @@ $(function() {
             }
         }]
     });
-        $(window).on("load resize", function(e) {
+    $(window).on("load resize", function(e) {
         var WindowWidth = $(window).outerWidth();
         var cellDiv1 = $(".tool_box").find('.item');
         if (WindowWidth >= 768) {
@@ -255,3 +255,46 @@ $(function() {
         }
     });
 });
+// lp 進階查詢
+$(function(){
+    $('.advanced_search_block .advanced_search').hide();
+    $('.btn_advanced_search').off().click(function(event) {
+        $('.advanced_search_block .advanced_search').stop().slideToggle();
+    });
+});
+$(function(){
+    var _category = $('.category');
+    _category.find('li').has('ul').addClass('hasChild');
+    var liHasChild = _category.find('li.hasChild'),
+    liHasChild_level1 = $('.category ul').children('li.hasChild');
+    // 無障礙tab設定
+    _category.find('ul ul').hide();
+    liHasChild.keyup(function() {
+        $(this).children('ul').fadeIn();
+        $(this).siblings().focus(function() {
+            $(this).hide();
+        });
+    });
+    _category.find('li').keyup(function() {
+        $(this).siblings().children('ul').hide();
+    });
+    _category.find('li:last-child>a').focusout(function() {
+        _category.find('li ul').hide();
+    });
+    liHasChild.on({
+        mouseenter: function() {
+            $(this).children('ul').stop(true, false).fadeIn();
+        },
+        mouseleave: function() {
+            $(this).parent().siblings('ul').hide();
+            $(this).children('ul').stop(true, false).fadeOut();
+        }
+    });
+    liHasChild.off('click');
+    $(document).on('touchend click', function(e) {
+        var target = e.target;
+        if (!$(target).is('.category li a')) {
+            $('.category').find('li ul').hide();
+        }
+    });
+})

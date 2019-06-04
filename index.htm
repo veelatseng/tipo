@@ -9,17 +9,37 @@
     <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
     <script src="js/respond.min.js"></script>
-    <![endif]-->
-    <!-- hyUI -->
-    <link rel="stylesheet" href="css/hyui.css">
+<![endif]-->
+<!-- hyUI -->
+<link rel="stylesheet" href="css/hyui.css">
 <style>
-.demo_wrap{max-width:1000px;margin:0em auto 1em;padding:15px 15px 3em;clear:both;background:#FFF}.demo_wrap h1{display:block;margin:0px auto;max-width:300px;float:left;margin-right:1em}@media screen and (max-width:545px){.demo_wrap h1{max-width:100%;float:none;text-align:center}}.demo_wrap h1 img{width:300px}.num{width:12%}body{counter-reset:num}table{margin-bottom:1em}table caption{text-align:left;font-weight:bold;font-size:1.25em;padding:.5em 0;color:#ff5050}tbody tr td:first-child:before{counter-increment:num;display:block;text-align:center;content:counters(num,".") " "}tbody tr td:nth-child(2){width:35%}.btn_grp{text-align:right}@media screen and (max-width:545px){.btn_grp{text-align:center}}</style>
+    .demo_wrap{max-width:1000px;margin:0em auto 1em;padding:15px 15px 3em;clear:both;background:#FFF}
+    .demo_wrap h1{display:block;margin:0px auto;max-width:300px;float:left;margin-right:1em}
+    @media screen and (max-width:545px){
+        .demo_wrap h1{max-width:100%;float:none;text-align:center}
+    }
+    .demo_wrap h1 img{width:300px}
+    .num{width:12%}
+    body{counter-reset:num}
+    table{margin-bottom:1em}
+    table caption{text-align:left;font-weight:bold;font-size:1.25em;padding:.5em 0;color:#ff5050}
+    tbody tr td:first-child:before{counter-increment:num;display:block;text-align:center;content:counters(num,".") " "}
+    tbody tr td:nth-child(2){width:35%}
+    .btn_grp{text-align:right}
+    @media screen and (max-width:545px){
+        .btn_grp{text-align:center}
+    }
+    tbody tr.un{background: #F3F3F3;}
+    tbody tr.un a{color: #ccc;}
+    tbody tr.un a[href]{content: ""}
+    tbody tr.un a::before{content: "未完成－－－"}
+</style>
 </head>
 <body>
     <div class="demo_wrap">
         <h1><img src="images/logo.png" alt=""></h1>
         <div class="btn_grp">
-            <a href="#" class="btn">切版檔案請按此下載</a>
+            <a href="https://c2zuww.axshare.com/" class="btn" target="blank">規劃檔</a>
         </div>
         <hr>
         <div class="table_wrapper">
@@ -41,52 +61,77 @@
                     </tr>
                     <tr>
                         <td></td>
-                        <td>列表頁</td>
-                        <td><a href="lp.htm"></a></td>
+                        <td>lp1一般列表頁</td>
+                        <td><a href="lp.php"></a></td>
                     </tr>
                     <tr>
                         <td></td>
-                        <td>列表頁-表格</td>
-                        <td><a href="lp_table.htm"></a></td>
+                        <td>lp2圖文列表頁</td>
+                        <td><a href="lp2.php"></a></td>
                     </tr>
                     <tr>
                         <td></td>
-                        <td>列表頁-相簿</td>
-                        <td><a href="lp_album.htm"></a></td>
+                        <td>lp3表格列表頁</td>
+                        <td><a href="lp_table.php"></a></td>
                     </tr>
                     <tr>
                         <td></td>
-                        <td>內容頁</td>
-                        <td><a href="cp.htm"></a></td>
-                    </tr>
-                     <tr>
-                        <td></td>
-                        <td>內容頁-照片</td>
-                        <td><a href="cp_photo.htm"></a></td>
+                        <td>lp4標題列表頁</td>
+                        <td><a href="lp_title.php"></a></td>
                     </tr>
                     <tr>
                         <td></td>
-                        <td>節點頁</td>
+                        <td>lp5附件下載列表頁</td>
+                        <td><a href="lp_file.php"></a></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>lp6相簿列表頁</td>
+                        <td><a href="lp_album.php"></a></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>lp7混合查詢列表頁</td>
+                        <td><a href="lp_search.php"></a></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>cp1一般內容頁</td>
+                        <td><a href="cp.php"></a></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>cp2表格混合列表內容頁</td>
+                        <td><a href="cp_list.php"></a></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>cp3相簿內容頁</td>
+                        <td><a href="cp_photo.php"></a></td>
+                    </tr>
+                    <tr class="un">
+                        <td></td>
+                        <td>np節點</td>
                         <td><a href="np.htm"></a></td>
                     </tr>
-                    <tr>
+                    <tr class="un">
                         <td></td>
-                        <td>轉寄友人</td>
+                        <td>fp轉寄友人</td>
                         <td><a href="fp.htm"></a></td>
                     </tr>
-                    <tr>
+                    <tr class="un">
                         <td></td>
-                        <td>意見信箱</td>
+                        <td>qp條件查詢</td>
                         <td><a href="qp.htm"></a></td>
                     </tr>
-                    <tr>
+                    <tr class="un">
                         <td></td>
-                        <td>網站地圖</td>
+                        <td>sitemap網站地圖</td>
                         <td><a href="sitemap.htm"></a></td>
                     </tr>
-                     <tr>
+                    <tr class="un">
                         <td></td>
-                        <td>404 網站錯誤</td>
+                        <td>404錯誤畫面</td>
                         <td><a href="404.htm"></a></td>
                     </tr>
                 </tbody>
@@ -101,22 +146,61 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
+                    <tr class="un">
                         <td></td>
-                        <td>電子報</td>
+                        <td>sp1_1電子報訂閱</td>
                         <td><a href="epaper.htm"></a></td>
                     </tr>
-                     <tr>
+                    <tr class="un">
                         <td></td>
-                        <td>...</td>
-                        <td><a href="..."></a></td>
+                        <td>sp1_2電子報列表</td>
+                        <td><a href="epaper_list.htm"></a></td>
                     </tr>
-                     <tr>
+                    <tr class="un">
                         <td></td>
-                        <td>...</td>
-                        <td><a href="..."></a></td>
+                        <td>sp2_1問卷調查</td>
+                        <td><a href="survey.html"></a></td>
                     </tr>
-                  
+                    <tr class="un">
+                        <td></td>
+                        <td>sp2_2問卷統計結果</td>
+                        <td><a href="survey_result.htm"></a></td>
+                    </tr>
+                    <tr class="un">
+                        <td></td>
+                        <td>sp2_3問卷統計結果-意見回饋</td>
+                        <td><a href="survey_feedback.htm"></a></td>
+                    </tr>
+                    <tr class="un">
+                        <td></td>
+                        <td>sp2_4問卷說明</td>
+                        <td><a href="survey_description.htm"></a></td>
+                    </tr>
+                    <tr class="un">
+                        <td></td>
+                        <td>sp3檢警調登入頁</td>
+                        <td><a href="investigation.htm"></a></td>
+                    </tr>
+                    <tr class="un">
+                        <td></td>
+                        <td>sp4地圖</td>
+                        <td><a href="map.htm"></a></td>
+                    </tr>
+                    <tr class="un">
+                        <td></td>
+                        <td>sp5faq</td>
+                        <td><a href="faq.htm"></a></td>
+                    </tr>
+                    <tr class="un">
+                        <td></td>
+                        <td>sp6_1pc國際專利分類查詢</td>
+                        <td><a href="patent.htm"></a></td>
+                    </tr>
+                    <tr class="un">
+                        <td></td>
+                        <td>sp6_2版本差異表</td>
+                        <td><a href="patent2.htm"></a></td>
+                    </tr>
                 </tbody>
             </table>
         </div>
@@ -134,12 +218,12 @@
     <script src="js/hyui.js"></script>
     <script src="js/customize.js"></script>
     <script>
-    $(function() {
-        $('tbody').find('a').each(function(index, el) {
-            var Link = $(this).attr('href');
-            $(this).text(Link);
-        });
-    })
+        $(function() {
+            $('tbody').find('a').each(function(index, el) {
+                var Link = $(this).attr('href');
+                $(this).text(Link);
+            });
+        })
     </script>
 </body>
 

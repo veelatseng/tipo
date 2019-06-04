@@ -63,27 +63,27 @@ div.function {
 }
 // 放進function_panel樣式
 .function_panel {
-    .share {
-        .shareButton {
-            &:before {
-                content: "";
-                position: absolute;
-                width: 60%;
-                height: 60%;
-                top: 20%;
-                left: 20%;
-                background: url(../images/basic/icon_share.png) no-repeat center center  !important;
-                background-size: 24px !important;
-            }
-            text-indent:-9999px;
-            &:hover,
-            &:focus {
-                &:before {
-                    filter: invert(100%);
-                }
-            }
-        }
-    }
+    // .share {
+    //     .shareButton {
+    //         &:before {
+    //             content: "";
+    //             position: absolute;
+    //             width: 60%;
+    //             height: 60%;
+    //             top: 20%;
+    //             left: 20%;
+    //             background: url(../images/basic/icon_share.png) no-repeat center center  !important;
+    //             background-size: 24px !important;
+    //         }
+    //         text-indent:-9999px;
+    //         &:hover,
+    //         &:focus {
+    //             &:before {
+    //                 filter: invert(100%);
+    //             }
+    //         }
+    //     }
+    // }
     .function {
         height: 40px;
         margin: 0;
@@ -103,7 +103,7 @@ div.function {
                     text-align: center;
                     line-height: 40px;
                     border-radius: 50%;
-                    background: #F1F1F1;
+                    background: #ddd;
                     text-indent: -9999px;
                     position: relative;
                     &:hover,

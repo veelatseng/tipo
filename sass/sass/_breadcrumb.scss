@@ -1,8 +1,8 @@
 .breadcrumb {
-    border-bottom: 1px solid #EEE;
-    padding: .1em 0em .1em;
-    font-size: .813em;
+    padding: .1em 0 0 1em;
+    font-size: .938em;
     margin: 0px auto 5px;
+    background: url(../images/icon_home.png) no-repeat left center;
     ul {
         @include li-reset;
         li {

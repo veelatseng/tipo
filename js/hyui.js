@@ -9,14 +9,14 @@ $(function() {
     ///////////////// 變數 ////////////////
     /*-----------------------------------*/
     var _window = $(window),
-        ww = _window.outerWidth(),
-        wh = _window.height(),
-        _body = $('body'),
-        _html = $('html'),
-        wwNormal = 1400,
-        wwMedium = 992,
-        wwSmall = 768,
-        wwxs = 576;
+    ww = _window.outerWidth(),
+    wh = _window.height(),
+    _body = $('body'),
+    _html = $('html'),
+    wwNormal = 1400,
+    wwMedium = 992,
+    wwSmall = 768,
+    wwxs = 576;
     /*-----------------------------------*/
     //////////// nojs 先移除////////////////
     /*-----------------------------------*/
@@ -35,10 +35,10 @@ $(function() {
     var _menu = $('.menu');
     _menu.find('li').has('ul').addClass('hasChild');
     var liHasChild = _menu.find('li.hasChild'),
-        liHasChild_level1 = $('.menu ul').children('li.hasChild'),
-        liHasChild_level2 = $('.menu ul ul').children('li.hasChild'),
-        liHasChild_level3 = $('.menu ul ul ul').children('li.hasChild'),
-        subMenuWidth = liHasChild.first().children('ul').outerWidth();
+    liHasChild_level1 = $('.menu ul').children('li.hasChild'),
+    liHasChild_level2 = $('.menu ul ul').children('li.hasChild'),
+    liHasChild_level3 = $('.menu ul ul ul').children('li.hasChild'),
+    subMenuWidth = liHasChild.first().children('ul').outerWidth();
     /*-----------------------------------*/
     ////////////// 行動版選單切換////////////
     /*-----------------------------------*/
@@ -48,15 +48,15 @@ $(function() {
     $('.subquick').append('<a href="#" class="close">關閉選單</a>');
     var menu_status = false;
     var _sidebar = $('.sidebar'),
-        _search = $('.search'),
-        _nav = $('.navigation'),
-        _sidebarClose = $('.sidebarClose'),
-        _sidebarCtrl = $('.sidebarCtrl'),
-        _overlay = $('.menu_overlay'),
-        _searchCtrl = $('.searchCtrl'),
-        _quick_link = $('.quick_link'),
-        _mArea = $('.m_area'),
-        _subquick = $('.subquick');
+    _search = $('.search'),
+    _nav = $('.navigation'),
+    _sidebarClose = $('.sidebarClose'),
+    _sidebarCtrl = $('.sidebarCtrl'),
+    _overlay = $('.menu_overlay'),
+    _searchCtrl = $('.searchCtrl'),
+    _quick_link = $('.quick_link'),
+    _mArea = $('.m_area'),
+    _subquick = $('.subquick');
     _fixed_sidebar = $('.fixed_sidebar');
     var search_mode = false;
     // 打開選單 function
@@ -476,14 +476,14 @@ $(function() {
     function imgResize() {
         $('.imgOuter').each(function(index, el) {
             var _imgContainer = $(this),
-                cWidth = _imgContainer.width(),
-                cHeight = _imgContainer.height(),
-                ratioC = cWidth / cHeight,
-                _img = _imgContainer.find('img');
+            cWidth = _imgContainer.width(),
+            cHeight = _imgContainer.height(),
+            ratioC = cWidth / cHeight,
+            _img = _imgContainer.find('img');
             var iWidth = $(this).find('img').width(),
-                iHeight = $(this).find('img').height(),
-                ratioImg = iWidth / iHeight,
-                scaleRatio;
+            iHeight = $(this).find('img').height(),
+            ratioImg = iWidth / iHeight,
+            scaleRatio;
             if (ratioC > ratioImg) {
                 scaleRatio = cWidth / iWidth;
                 _img.width(cWidth).height(iHeight * scaleRatio).css('top', -.5 * (iHeight * scaleRatio - cHeight));
@@ -608,15 +608,15 @@ $(function() {
     function tabSet() {
         $('.tabs').each(function() {
             var _tab = $(this),
-                _tabItem = _tab.find('.tabItem'),
-                _tabItemA = _tabItem.children('a'),
-                _tabContent = _tab.find('.tabContent'),
-                tabwidth = _tab.width(),
-                tabItemHeight = _tabItem.outerHeight(),
-                tabContentHeight = _tab.find('.active').next().innerHeight(),
-                tiGap = 0,
-                tabItemLength = _tabItem.length,
-                tabItemWidth;
+            _tabItem = _tab.find('.tabItem'),
+            _tabItemA = _tabItem.children('a'),
+            _tabContent = _tab.find('.tabContent'),
+            tabwidth = _tab.width(),
+            tabItemHeight = _tabItem.outerHeight(),
+            tabContentHeight = _tab.find('.active').next().innerHeight(),
+            tiGap = 0,
+            tabItemLength = _tabItem.length,
+            tabItemWidth;
             _tab.find('.active').next('.tabContent').show();
             if (ww >= wwSmall) {
                 _tabContent.css('top', tabItemHeight);
@@ -635,9 +635,9 @@ $(function() {
 
             function tabs(e) {
                 var _tabItemNow = $(this).parent(),
-                    tvp = _tab.offset().top,
-                    tabIndex = _tabItemNow.index() / 2,
-                    scollDistance = tvp + tabItemHeight * tabIndex - hh;
+                tvp = _tab.offset().top,
+                tabIndex = _tabItemNow.index() / 2,
+                scollDistance = tvp + tabItemHeight * tabIndex - hh;
                 _tabItem.removeClass('active');
                 _tabItemNow.addClass('active');
                 if (ww <= wwSmall) {
@@ -733,45 +733,45 @@ $(function() {
     /*------------------------------------*/
     //////////分享按鈕 share dropdwon////////
     /*------------------------------------*/
-    $('.function_panel .share').children('ul').hide();
-    $('.function_panel .share').prepend('<a href="#" class="shareButton">share分享按鈕</a>');
-    var _shareButton = $('.shareButton');
-    _shareButton.off().click(function(e) {
-        $(this).siblings('ul').stop(true, true).slideToggle();
-        e.preventDefault();
-    });
-    _shareButton.keyup(function(event) {
-        $(this).siblings('ul').stop(true, true).slideDown();
-    });
-    $('.function_panel .share').find('li:last>a').focusout(function(event) {
-        $(this).parent().parent('ul').hide();
-    });
-    // 點外面關閉share
-    $(document).on('touchend click', function(e) {
-        var container = $(".function_panel .share");
-        if (!container.is(e.target) && container.has(e.target).length === 0) {
-            $('.function_panel .share ul').hide();
-        }
-    });
+    // $('.function_panel .share').children('ul').hide();
+    // $('.function_panel .share').prepend('<a href="#" class="shareButton">share分享按鈕</a>');
+    // var _shareButton = $('.shareButton');
+    // _shareButton.off().click(function(e) {
+    //     $(this).siblings('ul').stop(true, true).slideToggle();
+    //     e.preventDefault();
+    // });
+    // _shareButton.keyup(function(event) {
+    //     $(this).siblings('ul').stop(true, true).slideDown();
+    // });
+    // $('.function_panel .share').find('li:last>a').focusout(function(event) {
+    //     $(this).parent().parent('ul').hide();
+    // });
+    // // 點外面關閉share
+    // $(document).on('touchend click', function(e) {
+    //     var container = $(".function_panel .share");
+    //     if (!container.is(e.target) && container.has(e.target).length === 0) {
+    //         $('.function_panel .share ul').hide();
+    //     }
+    // });
     /*------------------------------------*/
     /////////////字型大小 font-size//////////
     /*------------------------------------*/
     $('.font_size').find('.medium').addClass('active');
     $('.font_size').find('.small').click(function(e) {
         $(this).parent('li').siblings('li').find('a').removeClass('active');
-        $('.cp').removeClass('large_size').addClass('small_size');
+        $('.innerpage').removeClass('large_size').addClass('small_size');
         $(this).addClass('active');
         e.preventDefault();
     });
     $('.font_size').find('.medium').click(function(e) {
         $(this).parent('li').siblings('li').find('a').removeClass('active');
-        $('.cp').removeClass('large_size small_size');
+        $('.innerpage').removeClass('large_size small_size');
         $(this).addClass('active');
         e.preventDefault();
     });
     $('.font_size').find('.large').click(function(e) {
         $(this).parent('li').siblings('li').find('a').removeClass('active');
-        $('.cp').removeClass('small_size').addClass('large_size');
+        $('.innerpage').removeClass('small_size').addClass('large_size');
         $(this).addClass('active');
         e.preventDefault();
     });

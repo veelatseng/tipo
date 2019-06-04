@@ -5,6 +5,7 @@
 // 定義顏色 此顏色可自由變換
 $primaryColor:				#2752aa;				//主色 
 $secondaryColor:			#00ac9c; 				//輔色
+$thirdColor:	     		#4bb5c8; 				//輔色
 $lightColor:				#FCC211;				//點綴
 $linkColor:					#21BAFF;				//連結
 $importantColor:			#FF3E4D;				//重要
@@ -28,7 +29,7 @@ $aColoronDark:				saturate(lighten($aColor, 13), 30);
 $aHoveronDark:				saturate(lighten($aColor, 21), 30);
 
 // 表單focus顏色
-$form-focus:				#06d8c0;				//表單
+$form-focus:				#4bb5c8;				//表單
 //-------------------------------------------------------------字型--------//
 
 // 字型設定

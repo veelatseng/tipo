@@ -41,19 +41,55 @@ html {
     margin: -8em auto 0;
     padding: 0; // max-width: $container-max;
     // 可先設定一個中央區塊最大寬，限制accesskey對齊
+
     @include screen('mobile') {
         padding-top: 60px;
         margin-top: 0;
     }
     // 內頁標題設定
-    h2 {
-        line-height: 1.25em;
+    h2.title {
+        font-size: 1.75em;
+        line-height: 1em;
+        color: #193b75;
+        position: relative;
+        &:after{
+            content: "";
+            width: 30%;
+            height: 4px;
+            position: absolute;
+            bottom: -14px;
+            left: 0;
+            background: rgb(1,172,157);
+            background: -moz-linear-gradient(90deg, rgba(1,172,157,1) 0%, rgba(75,181,200,1) 25%, rgba(33,51,124,1) 100%);
+            background: -webkit-linear-gradient(90deg, rgba(1,172,157,1) 0%, rgba(75,181,200,1) 25%, rgba(33,51,124,1) 100%);
+            background: linear-gradient(90deg, rgba(1,172,157,1) 0%, rgba(75,181,200,1) 25%, rgba(33,51,124,1) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#01ac9d",endColorstr="#21337c",GradientType=1);
+        }
     }
 }
 ////////////////////////////////////////////////////////////
 // 為了與首頁區隔，請在內頁加上innerpage ClassName
 .innerpage {
     padding-top: 150px;
+    margin: -9.4em auto 0;
+    &:before{
+        content: "";
+        width: 100%;
+        height: 45px;
+        margin-bottom: 2em;
+        box-shadow: inset 0px 5px 8px 0px rgba(0,0,0,.3);
+        background: rgb(1,172,157);
+        background: -moz-linear-gradient(90deg, rgba(1,172,157,1) 0%, rgba(75,181,200,1) 25%, rgba(33,51,124,1) 100%);
+        background: -webkit-linear-gradient(90deg, rgba(1,172,157,1) 0%, rgba(75,181,200,1) 25%, rgba(33,51,124,1) 100%);
+        background: linear-gradient(90deg, rgba(1,172,157,1) 0%, rgba(75,181,200,1) 25%, rgba(33,51,124,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#01ac9d",endColorstr="#21337c",GradientType=1);
+    }
+    &.small_size {
+        font-size: .938em;
+    }
+    &.large_size {
+        font-size: 1.125em;
+    }
     @include screen('mobile') {
         padding-top: 5em;
     }

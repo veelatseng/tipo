@@ -6,7 +6,7 @@
     font-size: .938em;
     @extend %clearfix; // outline: 1px solid red;
     span {
-        color: $primaryColor;
+        color: $secondaryColor;
         margin: 0px .5em;
     }
     .page {
@@ -20,7 +20,7 @@
             list-style: none;
             @include box-sizing();
             a {
-                border-radius: 5px;
+                border-radius: 3px; 
                 padding: 6px 10px;
                 font-weight: 700;
                 display: block;
@@ -31,16 +31,16 @@
                 border: #ccc solid 1px;
                 &:hover,
                 &:focus {
-                    background: $primaryColor;
+                    background: $thirdColor;
                     color: #fff !important;
-                    border: $primaryColor solid 1px;
+                    border: darken($thirdColor, 5) solid 1px;
                 }
             }
             &.active {
                 a {
                     color: #fff !important;
-                    background: $form-focus;
-                    border: darken($form-focus, 5) solid 1px;
+                    background: $secondaryColor;
+                    border: darken($secondaryColor, 5) solid 1px;
                 }
             }
             %arrow {

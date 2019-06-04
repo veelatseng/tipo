@@ -24,14 +24,15 @@
                 text-align: center;
                 line-height: 40px;
                 border-radius: 50%;
-                background: #F1F1F1;
+                background: #ddd;
                 color: #333;
                 &:hover, &:focus {
                     background: $aHover;
                     color: #FFF;
                 }
                 &.active {
-                    background: #F1F1F1;
+                    background: #444;
+                    color: #FFF;
                     &:hover, &:focus {
                         background: $aHover;
                         color: #FFF;

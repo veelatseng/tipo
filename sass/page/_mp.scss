@@ -45,7 +45,7 @@
         @include screen('notebook') {
             @include aspect-ratio(5, 3);
         }
-         @include screen('mobile') {
+        @include screen('mobile') {
             @include aspect-ratio(5, 4);
         }
         a {
@@ -141,85 +141,85 @@
                 @include gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .1), vertical);
                 z-index: 1;
                 @include screen('mobile') {
-                     @include gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, 0), vertical);
-                }
-            }
-        }
+                 @include gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, 0), vertical);
+             }
+         }
+     }
+ }
+ .slick-dots {
+    bottom: 4em;
+    @include screen('mobile') {
+        bottom: 1em;
     }
-    .slick-dots {
-        bottom: 4em;
-        @include screen('mobile') {
-            bottom: 1em;
-        }
+}
+.slick-dots li button {
+    &:hover, &:focus {
+        outline: none;
+        box-shadow: none !important;
     }
-    .slick-dots li button {
-        &:hover, &:focus {
-            outline: none;
-            box-shadow: none !important;
-        }
+}
+.slick-dots li button:before {
+    background: #FFF;
+    opacity: 1;
+    @include screen('mobile') {
+        background: #DDD;
     }
-    .slick-dots li button:before {
-        background: #FFF;
-        opacity: 1;
-        @include screen('mobile') {
-            background: #DDD;
-        }
-    }
-    .slick-dots li.slick-active button:before, .slick-dots li button:hover:before {
-        background: $color-yellow;
-        @include screen('mobile') {
-            background: $color-yellow;
-        }
-    }
-    .slick-dots li button:focus:before {
+}
+.slick-dots li.slick-active button:before, .slick-dots li button:hover:before {
+    background: $color-yellow;
+    @include screen('mobile') {
         background: $color-yellow;
     }
-    .slick-prev {
+}
+.slick-dots li button:focus:before {
+    background: $color-yellow;
+}
+.slick-prev {
+    background: url(../vendor/slick/icon_arrow_left.png) no-repeat center center;
+    background-size: 80%;
+    left: 50%;
+    margin-left: -30%;
+    top: 52%;
+    @include screen('notebook') {
+        left: 7%;
+        margin-left: auto;
+        top: 42.5%;
+    }
+    @include screen('mobile') {
         background: url(../vendor/slick/icon_arrow_left.png) no-repeat center center;
         background-size: 80%;
-        left: 50%;
-        margin-left: -30%;
-        top: 52%;
-        @include screen('notebook') {
-            left: 7%;
-            margin-left: auto;
-            top: 42.5%;
-        }
-        @include screen('mobile') {
-            background: url(../vendor/slick/icon_arrow_left.png) no-repeat center center;
-            background-size: 80%;
-            top: 35%;
-            left: 5px;
-            margin-left: auto;
-        }
-        &:hover, &:focus {
-            background: url(../vendor/slick/icon_arrow_left.png) no-repeat center center RGBA(0, 0, 0, .5);
-            background-size: 80%;
-        }
+        top: 35%;
+        left: 5px;
+        margin-left: auto;
     }
-    .slick-next {
+    &:hover, &:focus {
+        background: url(../vendor/slick/icon_arrow_left.png) no-repeat center center RGBA(0, 0, 0, .5);
+        background-size: 80%;
+    }
+}
+.slick-next {
+    background: url(../vendor/slick/icon_arrow_right.png) no-repeat center center;
+    background-size: 80%;
+    left: 50%;
+    margin-left: -24.5%;
+    top: 52%;
+    @include screen('notebook') {
+        left: 14%;
+        margin-left: 0;
+        top: 42.5%;
+    }
+    @include screen('mobile') {
         background: url(../vendor/slick/icon_arrow_right.png) no-repeat center center;
         background-size: 80%;
-        left: 50%;
-        margin-left: -24.5%;
-        top: 52%;
-        @include screen('notebook') {
-            left: 14%;
-            margin-left: 0;
-            top: 42.5%;
-        }
-        @include screen('mobile') {
-            background: url(../vendor/slick/icon_arrow_right.png) no-repeat center center;
-            background-size: 80%;
-            top: 35%;
-            right: 5px;
-            margin-left: auto;
-        }
-        &:hover, &:focus {
-            background: url(../vendor/slick/icon_arrow_right.png) no-repeat center center RGBA(0, 0, 0, .5);
-            background-size: 80%;
-        }
+        top: 35%;
+        right: 5px;
+        margin-left: auto;
     }
+    &:hover, &:focus {
+        background: url(../vendor/slick/icon_arrow_right.png) no-repeat center center RGBA(0, 0, 0, .5);
+        background-size: 80%;
+    }
+}
 }
 // tab
 .tab_block {
@@ -1377,7 +1377,7 @@
     }
     p {
         padding-left: 90px;
-        min-height: 80px;
+        min-height: 40px;
         background: url(../images/icon_subscribe.png) no-repeat 10px top;
         @include screen('mobile') {
             @include gutter;
@@ -1390,6 +1390,7 @@
             background: transparent;
             min-width: 10em;
             color: #FFF;
+            border-radius: 0px;
             &:hover, &:focus {
                 background: rgba(0, 0, 0, .3);
             }
