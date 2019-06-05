@@ -1,5 +1,17 @@
 .fp{
-	margin: 1em auto;
 	@include box-sizing;
-	padding:1em;
+	clear: both;
+	background: #eee;
+	margin: .8em 0 2.5em 0;
+	padding: 1.5em;  
+	// border: 1px solid #ddd;
+	@include border-radius(2px);
+	label{
+		text-align: right;
+		font-weight: bold;
+	}
+	.btn_grp{
+		margin-bottom: 0;
+		padding-bottom: 0;
+	}
 }

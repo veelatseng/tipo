@@ -458,19 +458,18 @@
     }
   }
 }
-.advanced_search_block{
+.advanced_search_block,.advanced_search_block2{
   margin-top: -48px;
   margin-bottom: 15px;
   .advanced_search{
-    border-top: 5px solid $thirdColor;
-    clear: both;
     @include border-radius(0);
+    clear: both;
     background: #f2f2f2;
-    margin-top: .8em;
-    margin-bottom: 1em;
-    padding: .6em 1em 0em 1em;
-    display: none;
+    margin: .8em 0 1em 0;
+    padding: 1.5em;  
+    border-top: 5px solid $thirdColor;
     box-shadow: 0 0 3px rgba(0, 0, 0, .3);
+    display: none;
     label{
       background: url(../images/arrow1.png) no-repeat 1em 9px;
       padding-left: 2.5em!important;
@@ -507,62 +506,18 @@
       margin: 0;
       font-size: 0.813em;
     }
-    .btn_grp input{
-      padding: .4em .5em;
+    .btn_grp{
+      margin-bottom: 0;
+      padding-bottom: 0;
+      input{
+        padding: .4em .5em;
+      }
     }
   }
 }
 .advanced_search_block2{
-  // margin-top: 0;
   margin-bottom: 15px;
   .advanced_search{
-    border-top: 5px solid $thirdColor;
-    clear: both;
-    @include border-radius(0);
-    background: #f2f2f2;
-    margin-top: .8em;
-    margin-bottom: 1em;
-    padding: .6em 1em 0em 1em;
     display: block;
-    box-shadow: 0 0 3px rgba(0, 0, 0, .3);
-    label{
-      background: url(../images/arrow1.png) no-repeat 1em 9px;
-      padding-left: 2.5em!important;
-      text-align: right;
-      font-weight: bold;
-      @include screen('mobile') {
-        background: url(../images/arrow1.png) no-repeat .2em 4px;
-        padding-left: 1.5em !important;
-      }
-    }
-    .form_grid{
-      @include screen('mobile') {
-        margin: 0;
-      }
-      .form_title{
-        @include screen('mobile') {
-          float: none;
-          padding-top: 0;
-        }
-      }
-      .form_content{
-        @include screen('mobile') {
-          float: none;
-          padding-left: 0;
-          padding-right: 0;
-        }
-      }
-    }
-    .form_content .form_grp {
-      border: none;
-      padding: .2em;
-    }
-    .form_content .form_grp p{
-      margin: 0;
-      font-size: 0.813em;
-    }
-    .btn_grp input{
-      padding: .4em .5em;
-    }
   }
 }

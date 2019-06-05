@@ -143,195 +143,32 @@
         </section>
         <!-- LP End -->
         <!-- Pagination -->
-        <div class="pagination">
-          <form action="" class="form_inline">
-            <div class="total"> 共<span>308</span>筆資料，第<span>1/18</span>頁，每頁顯示 <select name="" id="">
-              <option value="">10</option>
-              <option value="">20</option>
-              <option value="">30</option>
-              <option value="">40</option>
-            </select> 筆， <input type="button" class="btn" value="確定">
-          </div>
-        </form>
-        <ul class="page">
-          <li class="first">
-            <a href="#" title="第一頁">第一頁 </a></li>
-            <li class="prev">
-              <a href="#" title="回上一頁">回上一頁 </a></li>
-              <li class="active"><a href="#">1</a></li>
-              <li><a href="#">2</a></li>
-              <li><a href="#">3</a></li>
-              <li><a href="#">4</a></li>
-              <li><a href="#">5</a></li>
-              <li><a href="#">6</a></li>
-              <li><a href="#">7</a></li>
-              <li><a href="#">8</a></li>
-              <li><a href="#">9</a></li>
-              <li><a href="#">10</a></li>
-              <li class="next">
-                <a href="#" title="下一頁">下一頁 </a>
-              </li>
-              <li class="last">
-                <a href="#" title="最後一頁">最後一頁 </a>
-              </li>
-            </ul>
-          </div>
-        </div>
+        <?php require_once('include/pagination.html'); ?>
       </div>
-      <!-- 訂閱電子報 -->
-      <section class="section subscribe">
-        <div class="container">
-          <h2>訂閱電子報</h2>
-          <p>每月寄送一次，提供我國智財權發展與新知 讓您完整掌握IP最新動態、國際趨勢</p>
-          <div class="btn_grp">
-            <a href="#" class="btn">立即訂閱</a>
-            <a href="#" class="btn">近期電子報</a>
-          </div>
-        </div>
-      </section>
-      <!-- fatfooter Start -->
-      <section class="fatfooter">
-        <div class="container">
-          <button type="button" name="收合" class="btn btn-fatfooter">收合</button>
-          <!-- 快速連結 -->
-          <div class="fat_btn">
-            <ul>
-              <li><a href="#"><img src="images/fat_footer_btn01.png">網站導覽</a></li>
-              <li><a href="#"><img src="images/fat_footer_btn02.png">常見問答</a></li>
-              <li><a href="#"><img src="images/fat_footer_btn03.png">意見信箱</a></li>
-              <li><a href="#"><img src="images/fat_footer_btn04.png">雙語詞彙</a></li>
-            </ul>
-          </div>
-          <nav>
-            <ul>
-              <li><a href="#">主題網站</a>
-                <ul>
-                  <li><a href="#">專利主題網</a></li>
-                  <li><a href="#">商標主題網</a></li>
-                  <li><a href="#">著作權主題網</a></li>
-                  <li><a href="#">營業秘密專區</a></li>
-                  <li><a href="#">積體電路專區</a></li>
-                  <li><a href="#">20週年專區</a></li>
-                  <li><a href="#">智慧財產權e網通</a></li>
-                  <li><a href="#">專利商品化教育宣導網</a></li>
-                  <li><a href="#">國家發明創作獎</a></li>
-                  <li><a href="#">台灣創新技術博覽會</a></li>
-                  <li><a href="#">保護智慧財產權行動方案專區</a></li>
-                </ul>
-              </li>
-              <li><a href="#">便民服務</a>
-                <ul>
-                  <li><a href="#">智慧財產權懶人包</a></li>
-                  <li><a href="#">線上申請</a></li>
-                  <li><a href="#">檢索系統</a></li>
-                  <li><a href="#">電子報</a></li>
-                  <li><a href="#">便民服務計畫</a></li>
-                  <li><a href="#">資料服務資訊</a></li>
-                </ul>
-              </li>
-              <li><a href="#">最新消息</a>
-                <ul>
-                  <li><a href="#">布告欄</a></li>
-                  <li><a href="#">法規公告</a></li>
-                  <li><a href="#">新聞稿</a></li>
-                  <li><a href="#">徵才快報</a></li>
-                </ul>
-              </li>
-              <li><a href="#">國際事務</a>
-                <ul>
-                  <li><a href="#">國際動態</a></li>
-                  <li><a href="#">世界貿易組織(WTO)之議題</a></li>
-                  <li><a href="#">亞太經濟合作會議APEC</a></li>
-                  <li><a href="#">東南亞及南亞國家智慧財產權益維護專區</a></li>
-                  <li><a href="#">臺商在大陸地區智慧財產權益維護專區</a></li>
-                  <li><a href="#">智慧財產權國際公約</a></li>
-                </ul>
-              </li>
-              <li><a href="#">認識我們</a>
-                <ul>
-                  <li><a href="#">本局簡介</a></li>
-                  <li><a href="#">局長簡介</a></li>
-                  <li><a href="#">各地服務處</a></li>
-                  <li><a href="#">經濟部光碟聯合查核小組</a></li>
-                  <li><a href="#">聯絡我們</a></li>
-                </ul>
-              </li>
-              <li><a href="#">公開資訊</a>
-                <ul>
-                  <li><a href="#">法規資訊</a></li>
-                  <li><a href="#">統計專區</a></li>
-                  <li><a href="#">研究報告</a></li>
-                  <li><a href="#">本局出版品</a></li>
-                  <li><a href="#">預決算與會計月報</a></li>
-                  <li><a href="#">採購契約</a></li>
-                  <li><a href="#">請願與訴願</a></li>
-                  <li><a href="#">補助資訊</a></li>
-                  <li><a href="#">政府資料開放</a></li>
-                  <li><a href="#">其他公開文件</a></li>
-                  <li><a href="#">常見問題</a></li>
-                  <li><a href="#">相關連結</a></li>
-                </ul>
-              </li>
-              <li><a href="#">服務園地</a>
-                <ul>
-                  <li><a href="#">檢警調專區</a></li>
-                  <li><a href="#">新進人員專區</a></li>
-                  <li><a href="#">退休人員專區</a></li>
-                  <li><a href="#">影音專區</a></li>
-                  <li><a href="#">政風專區</a></li>
-                </ul>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </section>
-      <!-- fatfooter End -->
-      <!-- footer Start-->
-      <footer>
-        <div class="container">
-          <a class="accesskey" href="#aZ" id="aZ" accesskey="Z" title="頁尾區">:::</a>
-          <div class="footer_logo">
-            <img src="images/logo.png" alt="" class="img-responsive">
-          </div>
-          <div class="footer_info">
-            <ul class="footer_link">
-              <li><a href="javascript:;">政府網站資料開放宣告</a></li>
-              <li><a href="javascript:;">隱私權宣告</a></li>
-              <li><a href="javascript:;">資訊安全政策</a></li>
-            </ul>
-            <p> 地址：10637 臺北市大安區辛亥路2段185號3樓 <a href="#">交通位置圖</a> ｜ <a href="#">服務時間</a> ｜ <a href="#">各地服務處</a><br /> 電話：<a tel:="(02)2738-0007">(02)2738-0007</a> ｜ 傳真：<a tel:="(02)2377-9875">(02)2377-9875</a>｜ 電子申請暨專利客服電話：<a tel:="(02)8176-9009">(02)8176-9009</a> 本網站支援IE、Firefox及Chrome，最佳瀏覽解析度為1024x768以上</p>
-            <span class="update">更新日期:<em>2018/01/01</em></span>
-            <span class="counter">累計瀏覽人次:<em>46476653</em></span>
-          </div>
-          <div class="footer_icon">
-            <a target="_blank" href="javascript:;" title="另開視窗">
-              <img src="images/basic/accessibility.jpg" alt="">
-            </a>
-            <a target="_blank" href="javascript:;" title="另開視窗">
-              <img src="images/basic/egov.png" alt="">
-            </a>
-            <a target="_blank" href="javascript:;" title="另開視窗">
-              <img src="images/qrcode.jpg" alt="">
-            </a>
-          </div>
-        </div>
-      </footer>
-      <!-- footer End -->
     </div>
-    <a href="javascript:;" class="scrollToTop">回頁首</a>
-    <!-- JQ -->
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <!-- plugin js -->
-    <script src="vendor/jquery.easing.min.js"></script>
-    <script src="vendor/slick/slick.min.js "></script>
-    <script src="vendor/slick/slick-lightbox.js "></script>
-    <script src="vendor/lazyload/lazyload.min.js"></script>
-    <!-- nicescroll -->
-    <script src="vendor/nicescroll/jquery.nicescroll.min.js"></script>
-    <!-- hyUI -->
-    <script src="js/hyui.js"></script>
-    <!-- 客製js -->
-    <script src="js/customize.js"></script>
-  </body>
+    <!-- 訂閱電子報 -->
+    <?php require_once('include/subscribe.html'); ?>
+    <!-- fatfooter Start -->
+    <?php require_once('include/fatfooter.html'); ?>
+    <!-- fatfooter End -->
+    <!-- footer Start-->
+    <?php require_once('include/footer.html'); ?>
+    <!-- footer End -->
+  </div>
+  <a href="javascript:;" class="scrollToTop">回頁首</a>
+  <!-- JQ -->
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <!-- plugin js -->
+  <script src="vendor/jquery.easing.min.js"></script>
+  <script src="vendor/slick/slick.min.js "></script>
+  <script src="vendor/slick/slick-lightbox.js "></script>
+  <script src="vendor/lazyload/lazyload.min.js"></script>
+  <!-- nicescroll -->
+  <script src="vendor/nicescroll/jquery.nicescroll.min.js"></script>
+  <!-- hyUI -->
+  <script src="js/hyui.js"></script>
+  <!-- 客製js -->
+  <script src="js/customize.js"></script>
+</body>
 
-  </html>
+</html>
