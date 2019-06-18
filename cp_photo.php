@@ -78,6 +78,12 @@
                 </div>
                 <p>第四張圖說</p>
               </div>
+              <div>
+                <div class="img-container">
+                  <img src="https://assets.imgix.net/unsplash/paperlamp.jpg?w=800&h=480&fit=crop&auto=format%2Cenhance&usm=20">
+                </div>
+                <p>第五張圖說</p>
+              </div>
             </div>
             <!-- slider-for end-->
             <div class="controls"></div>

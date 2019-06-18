@@ -90,9 +90,9 @@ html {
     &.large_size {
         font-size: 1.125em;
     }
-    @include screen('mobile') {
-        padding-top: 5em;
-    }
+    // @include screen('mobile') {
+    //     padding-top: 5em;
+    // }
     >.container {
         @include gutter(); //gutter 代表左右要留白
     }

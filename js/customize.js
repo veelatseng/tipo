@@ -90,6 +90,7 @@ $(function() {
         arrows: true,
         focusOnSelect: true,
         infinite: true,
+        centerMode:true
     });
     // 懶人包
     $('.lazy ul').slick({
@@ -127,7 +128,7 @@ $(function() {
         }]
     });
     // 影片
-    $('.video').slick({
+    $('.video ul').slick({
         dots: false,
         infinite: true,
         speed: 300,
@@ -162,7 +163,7 @@ $(function() {
         }]
     });
     // 照片
-    $('.photo').slick({
+    $('.photo ul').slick({
         dots: false,
         infinite: true,
         speed: 300,
