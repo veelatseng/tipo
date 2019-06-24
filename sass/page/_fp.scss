@@ -1,14 +1,20 @@
 .fp{
 	@include box-sizing;
 	clear: both;
-	background: #eee;
 	margin: .8em 0 2.5em 0;
 	padding: 1.5em;  
-	// border: 1px solid #ddd;
+	border: 6px solid #eee;
 	@include border-radius(2px);
 	label{
 		text-align: right;
 		font-weight: bold;
+	}
+	.form_content{
+		label{
+			width: 30%;
+			text-align: left;
+			margin-bottom: 0;
+		}
 	}
 	.btn_grp{
 		margin-bottom: 0;

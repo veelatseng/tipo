@@ -69,12 +69,9 @@
               <div class="form_content">
                 <img src="images/basic/captcha.gif" alt="" class="captcha">
                 <input type="text" id="" value="">
-                <div class="notice_error">您輸入的驗證碼錯誤 <a href="javascript:;" class="close"><img src="images/basic/icon_close.svg" alt=""></a>
-                </div>
-                <div class="notice_success">您已經成功登入 <a href="javascript:;" class="close"><img src="images/basic/icon_close.svg" alt=""></a>
-                </div>
-                <div class="notice">這是一般提醒訊息區塊 <a href="javascript:;" class="close"><img src="images/basic/icon_close.svg" alt=""></a>
-                </div>
+                <div class="notice_error">您輸入的驗證碼錯誤 <a href="javascript:;" class="close"><img src="images/basic/icon_close.svg" alt=""></a></div>
+                <div class="notice_success">您已經成功登入 <a href="javascript:;" class="close"><img src="images/basic/icon_close.svg" alt=""></a></div>
+                <div class="notice">這是一般提醒訊息區塊 <a href="javascript:;" class="close"><img src="images/basic/icon_close.svg" alt=""></a></div>
               </div>
             </div>
             <div class="btn_grp">

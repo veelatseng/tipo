@@ -1,5 +1,6 @@
 .lp {
   table {
+    margin-bottom: 2em;
     td {
       text-align: left;
       max-width: 20%;
@@ -11,6 +12,30 @@
         text-decoration: underline;
         &:hover{
           text-decoration: none;
+        }
+        &.fw {
+          width: 40px;
+          height: 40px;
+          display: block;
+          border-radius: 50%;
+          background: $primaryColor;
+          text-indent: -9999px;
+          position: relative;
+          margin: 0 auto;
+          &:before{
+            content: "";
+            position: absolute;
+            width: 60%;
+            height: 60%;
+            top: 20%;
+            left: 20%;
+            background: url(../images/basic/icon_forward.png) no-repeat center center;
+            background-size: 100%;
+            filter: invert(100%);
+          }
+          &:hover,&:focus{
+            background: $secondaryColor;
+          }
         }
       }
       &.date {
@@ -92,9 +117,6 @@
         &.other{
           background: url(../images/basic/icon_other.jpg);
         }
-      }
-      a.ebook{
-
       }
     }
   }

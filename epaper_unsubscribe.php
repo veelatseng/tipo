@@ -34,7 +34,7 @@
         <!-- breadcrumb路徑 -->
         <?php require_once('include/breadcrumb.html'); ?>
         <!-- h2節點 -->
-        <h2 class="title">電子報訂閱</h2>
+        <h2 class="title">取消電子報訂閱</h2>
         <!-- function功能區塊 -->
         <div class="function_panel">
           <!-- function功能區塊 -->
@@ -44,7 +44,6 @@
             </ul>
           </div>
         </div>
-        <p>歡迎訂閱經濟部智慧財產局電子報<br>電子報每月發行，電子報內容包含當期電子報，與不定期寄送之訊息快遞。</p>
         <!-- epaper Start -->
         <section class="epaper">
           <p>註:<abbr class="necessary" title=“為必填(選)欄位,不能為空白。“>*</abbr>為必填(選)欄位, 不能為空白。</p>
@@ -57,7 +56,7 @@
               </div>
             </div>
             <div class="form_grp">
-              <label for="" class="form_title"><abbr class="necessary" title=“為必填(選)欄位,不能為空白。“>*</abbr>請勾選您要訂閱的項目：</label>
+              <label for="" class="form_title"><abbr class="necessary" title=“為必填(選)欄位,不能為空白。“>*</abbr>請勾選您要取消訂閱的項目：</label>
               <div class="form_content">
                 <label for=""><input type="checkbox">中文電子報</label> <label for=""><input type="checkbox">英文電子報</label>  
               </div>

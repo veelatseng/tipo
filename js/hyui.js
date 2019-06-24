@@ -271,12 +271,12 @@ $(function() {
             });
             // var passiveSupported = false;
 
-            $("html").niceScroll({
-                cursorborder: "1px solid transparent",
-                emulatetouch: true,
-                scrollspeed: 60,
-                cursorcolor: "RGBA(0,0,0,.3)"
-            });
+            // $("html").niceScroll({
+            //     cursorborder: "1px solid transparent",
+            //     emulatetouch: true,
+            //     scrollspeed: 60,
+            //     cursorcolor: "RGBA(0,0,0,.3)"
+            // });
             $('.innerpage').parents('body').find('header').addClass('inner_header');
             // _menu.hide();
             // $('.language').find('ul').hide();
@@ -343,7 +343,7 @@ $(function() {
             });
             // 專利
             $('.btn_talent').off().click(function(e) {
-                $('.talent').fadeIn().find('a:first').focus();
+                $('.subquick.talent').fadeIn().find('a:first').focus();
                 _html.addClass('noscroll');
                 _menu.hide();
                 $('.fixed_sidebar').hide();
@@ -351,7 +351,7 @@ $(function() {
             });
             // 商標
             $('.btn_trademark').off().click(function(e) {
-                $('.trademark').fadeIn().find('a:first').focus();
+                $('.subquick.trademark').fadeIn().find('a:first').focus();
                 _html.addClass('noscroll');
                 _menu.hide();
                 $('.fixed_sidebar').hide();
@@ -359,7 +359,7 @@ $(function() {
             });
             // 著作權
             $('.btn_copyright').off().click(function(e) {
-                $('.copyright').fadeIn().find('a:first').focus();
+                $('.subquick.copyright').fadeIn().find('a:first').focus();
                 _html.addClass('noscroll');
                 _menu.hide();
                 $('.fixed_sidebar').hide();
