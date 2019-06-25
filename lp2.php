@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>經濟部智慧財產局</title>
+  <title>Intellectual Property Office Ministry of Economic Affairs, R.O.C.</title>
     <!--HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries [if lt IE 9]>
     <script src="js/html5shiv.js"></script>
     <script src="js/respond.min.js"></script>
@@ -13,7 +13,7 @@
   <link rel="stylesheet" type="text/css" href="vendor/slick/slick.css" />
   <link rel="stylesheet" type="text/css" href="vendor/slick/slick-theme.css" />
   <!-- hyUI css -->
-  <link rel="stylesheet" href="css/hyui.css">
+  <link rel="stylesheet" href="css/hyui_en.css">
   <!-- ico -->
   <link rel="icon" type="image/ico" href="images/favicon.ico">
 </head>
@@ -192,16 +192,16 @@
         </section>
         <!-- LP End -->
         <!-- Pagination -->
-        <?php require_once('include/pagination.html'); ?>
+        <?php require_once('include/en_pagination.html'); ?>
       </div>
     </div>
     <!-- 訂閱電子報 -->
-    <?php require_once('include/subscribe.html'); ?>
+    <?php require_once('include/en_subscribe.html'); ?>
     <!-- fatfooter Start -->
-    <?php require_once('include/fatfooter.html'); ?>
+    <?php require_once('include/en_fatfooter.html'); ?>
     <!-- fatfooter End -->
     <!-- footer Start-->
-    <?php require_once('include/footer.html'); ?>
+    <?php require_once('include/en_footer.html'); ?>
     <!-- footer End -->
   </div>
   <a href="javascript:;" class="scrollToTop">回頁首</a>
