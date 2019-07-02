@@ -44,7 +44,7 @@
 // 首頁輪播
 .mpSlider {
   width: 100%;
-  padding-bottom: 3em;
+  // padding-bottom: 3em;
   @include gutter(0);
   .img-container {
     @include aspect-ratio(5, 2);
@@ -230,12 +230,13 @@
   //   }
   // }
   .slick-dots {
-    bottom: -1.5em;
+    bottom: 1.5em;
   }
   .slick-dots li button {
     &:hover, &:focus {
       outline: none;
       box-shadow: none !important;
+
     }
   }
       // .slick-dots li button:before {
@@ -255,11 +256,14 @@
           background: #DDD;
         }
       }
-      .slick-dots li.slick-active button:before, .slick-dots li button:hover:before {
+      .slick-dots li.slick-active button:before {
         background: #FFF;
-        @include screen('mobile') {
-          background: #FFF;
-        }
+        // @include screen('mobile') {
+        //   background: #FFF;
+        // }
+      }
+      .slick-dots li button:hover:before{
+        background: #00db87;
       }
       .slick-dots li button:focus:before {
         background: #FFF;
@@ -1650,7 +1654,7 @@
   position: fixed;
   z-index: 99;
   right: 0;
-  top: 6%;
+  top: 13%;
   margin: 0;
   padding: 0;
   padding-bottom: .5em;

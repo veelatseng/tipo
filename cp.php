@@ -114,6 +114,30 @@
                 </a>
                 <p class="infotxt">第四張圖說</p>
               </div>
+              <div class="imgOuter">
+                <a href="https://assets.imgix.net/examples/kingfisher.jpg?w=800&h=480&fit=crop&auto=format%2Cenhance&usm=20" data-caption="第一張圖說">
+                  <img src="https://assets.imgix.net/examples/kingfisher.jpg?w=800&h=480&fit=crop&auto=format%2Cenhance&usm=20" alt="">
+                </a>
+                <p class="infotxt">第5張圖說</p>
+              </div>
+              <div class="imgOuter">
+                <a href="https://assets.imgix.net/examples/puffins.jpg?w=800&h=480&fit=crop&auto=format%2Cenhance&usm=20" data-caption="第二張圖說">
+                  <img src="https://assets.imgix.net/examples/puffins.jpg?w=800&h=480&fit=crop&auto=format%2Cenhance&usm=20" alt="">
+                </a>
+                <p class="infotxt">第6張圖說</p>
+              </div>
+              <div class="imgOuter">
+                <a href="https://assets.imgix.net/unsplash/transport.jpg?w=800&h=480&fit=crop&auto=format%2Cenhance&usm=20" data-caption="第三張圖說">
+                  <img src="https://assets.imgix.net/unsplash/transport.jpg?w=800&h=480&fit=crop&auto=format%2Cenhance&usm=20" alt="">
+                </a>
+                <p class="infotxt">第7張圖說</p>
+              </div>
+              <div class="imgOuter">
+                <a href="https://assets.imgix.net/unsplash/bridge.jpg?w=800&h=480&fit=crop&auto=format%2Cenhance&usm=20" data-caption="第四張圖說">
+                  <img src="https://assets.imgix.net/unsplash/bridge.jpg?w=800&h=480&fit=crop&auto=format%2Cenhance&usm=20" alt="">
+                </a>
+                <p class="infotxt">第8張圖說</p>
+              </div>
             </div>
           </div>
           <!-- weblink 外部連結 -->
@@ -134,14 +158,22 @@
               <li> <span>惡意主機IP檢測惡意主機IP檢測惡意主機IP檢測惡意主機IP檢測惡意主機IP檢測</span><a href="xxxx.doc" class="doc">doc</a>
                 <a href="xxxx.odf" class="odf">odf</a>
                 <a href="http://www.google.com.tw" class="other">檔案下載(非副檔名做結尾)</a>
+                <span class="update">15kb</span>
+                <span class="file_view">下載次數：255次</span>
               </li>
               <li> <span>臺美「全球入境計畫」的正式啟用，符合資格</span><a href="xxxx.xls" class="xls">xls</a>
+                <span class="update">15kb</span>
+                <span class="file_view">下載次數：255次</span>
               </li>
               <li> <span>臺美「全球入境計畫」的正式啟用，符合資格</span>
                 <a href="xxxx.pptx" class="ppt">ppt</a>
                 <a href="xxxx.jpg" class="jpg">jpg</a>
+                <span class="update">15kb</span>
+                <span class="file_view">下載次數：255次</span>
               </li>
               <li> <span>臺美「全球入境計畫」的正式啟用，符合資格</span><a href="xxxx.pdf" class="pdf">pdf</a>
+                <span class="update">15kb</span>
+                <span class="file_view">下載次數：255次</span>
               </li>
             </ul>
           </div>
@@ -151,20 +183,10 @@
             <li>資料更新日期 : 2018-03-20</li>
             <li>瀏覽人次 : 123456</li>
           </ul>
-          <!-- satisfaction 滿意度調查 -->
-          <div class="satisfaction">
-            <label for="" class="form_title">這頁資訊有幫助嗎？</label> 
-            <div class="btn_grp">
-              <input name="" type="button" value="是">
-              <input name="" type="button" value="否">
-            </div>
-            <div class="result">
-              <em>80%</em>的人認為有幫助
-            </div>
-          </div>
-
         </section>
         <!-- CP End -->
+        <!-- satisfaction 滿意度調查 -->
+        <?php require_once('include/satisfaction.html'); ?>
       </div>
     </div>
     <!-- 訂閱電子報 -->

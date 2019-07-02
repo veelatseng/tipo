@@ -31,9 +31,9 @@ footer {
         @include make-md-column(3);
         @include make-lg-column(3);
         @include gutter();
-        img {
-            filter: grayscale(100%);
-        }
+        // img {
+        //     filter: grayscale(100%);
+        // }
     }
     .footer_info {
         @include make-xs-column(12);

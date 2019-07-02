@@ -8,8 +8,10 @@
     }
     li {
         display: block;
-        width: 49%;
-        margin: 0 1% 10px 0;
+        // width: 49%;
+        // margin: 0 1% 10px 0;
+        width: 48%;
+        margin: 0 2% 1.2em 0;
         float: left;
         @include box-sizing(border-box);
         &:nth-child(even) {
@@ -26,14 +28,21 @@
             }
         }
         a {
-            border-radius:4px;
-            border: 2px solid #DDD;
+            // border-radius:4px;
+            border: 2px solid #01ac9d;
             padding: 1em 1em 1em 2em;
             display: block;
             vertical-align: top;
             @include text-overflow;
             position:relative;
-            @include aSetting_nocolor;
+            background: url(../images/npbg.png);
+            // @include aSetting_nocolor;
+            // background: rgb(1,172,157);
+            // background: -moz-linear-gradient(45deg, rgba(1,172,157,1) 25%, rgba(75,181,200,1)  100%);
+            // background: -webkit-linear-gradient(45deg, rgba(1,172,157,1) 25%, rgba(75,181,200,1)  100%);
+            // background: linear-gradient(45deg, rgba(1,172,157,1) 25%, rgba(75,181,200,1)  100%);
+            // filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#01ac9d",endColorstr="#21337c",GradientType=0);
+            color: #fff;
             .num{
                 position: absolute;
                 width:1em;
@@ -47,7 +56,7 @@
             }
             &:hover,
             &:focus {
-                border: 2px solid $primaryColor;
+                border: 2px solid #3478bc;
             }
         }
     }

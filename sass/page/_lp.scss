@@ -6,13 +6,14 @@
       max-width: 20%;
       @include screen('mobile') {
         max-width: 100%;
+        min-height: 24px;
       }
       a {
-        @include aSetting_nocolor;
-        text-decoration: underline;
-        &:hover{
-          text-decoration: none;
-        }
+        @include aSetting;
+        // text-decoration: underline;
+        // &:hover{
+        //   text-decoration: none;
+        // }
         &.fw {
           width: 40px;
           height: 40px;
@@ -53,14 +54,20 @@
       }
       &.number {
         text-align: center;
-        color: $primaryColor;
+        // color: $primaryColor;
         @include screen('mobile') {
           text-align: left;
         }
       }
       &.brand {
         text-align: center;
-        color: $secondaryColor;
+        color: $color-orange;
+        @include screen('mobile') {
+          text-align: left;
+        }
+      }
+      &.center{
+        text-align: center;
         @include screen('mobile') {
           text-align: left;
         }
@@ -74,12 +81,20 @@
           background: url(../images/basic/icon_ebook.png);
           background-size: cover;
           margin: 0 auto;
+          text-indent: -9999px;
+          @include screen('mobile') {
+            margin: 0;
+          }
         }
         &.doc,&.odf,&.pdf,&.xls,&.ppt,&.ppt,&.jpg,&.mp3,&.mov,&.txt,&.dot,&.zip,&.other{
           width: 21px;
           height: 24px;
           display: inline-block;
           margin-right: 4px;
+          text-indent: -9999px;
+          @include screen('mobile') {
+            margin-bottom: 4px;
+          }
         }
         &.doc{
           background: url(../images/basic/icon_doc.jpg);
@@ -185,7 +200,7 @@
             font-size: .938em;
             margin-bottom: 5px;
             color: #2752aa;
-            font-weight: bold;
+            // font-weight: bold;
             margin-right: 10px;
           }
           time {
@@ -499,6 +514,9 @@
 .advanced_search_block,.advanced_search_block2{
   margin-top: -48px;
   margin-bottom: 15px;
+  @include screen('mobile') {
+    margin-top: 0;
+  }
   .advanced_search{
     @include border-radius(0);
     clear: both;
@@ -509,14 +527,14 @@
     box-shadow: 0 0 3px rgba(0, 0, 0, .3);
     display: none;
     label{
-      background: url(../images/arrow1.png) no-repeat 1em 9px;
-      padding-left: 2.5em!important;
+      // background: url(../images/arrow1.png) no-repeat 1em 9px;
+      // padding-left: 2.5em!important;
       text-align: right;
       font-weight: bold;
-      @include screen('mobile') {
-        background: url(../images/arrow1.png) no-repeat .2em 4px;
-        padding-left: 1.5em !important;
-      }
+      // @include screen('mobile') {
+      //   background: url(../images/arrow1.png) no-repeat .2em 4px;
+      //   padding-left: 1.5em !important;
+      // }
     }
     .form_grid{
       @include screen('mobile') {
@@ -554,6 +572,7 @@
   }
 }
 .advanced_search_block2{
+  margin-top: 0;
   margin-bottom: 15px;
   .advanced_search{
     display: block;

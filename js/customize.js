@@ -298,3 +298,26 @@ $(function(){
         }
     });
 })
+
+$(function(){
+    $(".result_bar .percent").each(function(){
+        var aa =$(this).text();
+        $(this).prev("td").find(".barbg").append("<span class='bar' style='width:" + aa + "'></span>");
+    });
+})
+$(function(){
+    $('.left_block .left_menu').find('li').has('ul').addClass('hasChild');
+    $('.left_block .left_menu ul>li ul').hide();
+    $('.left_block .left_menu ul').children('li.hasChild').click(function(e){
+        $(this).siblings("li").children('ul').slideUp();
+        $(this).children('ul').slideDown();
+        e.preventDefault();
+    });
+    $('.left_block .left_menu ul').children('li.hasChild').keyup(function(){
+        $(this).siblings().children('ul').slideUp();
+        $(this).children('ul').slideDown();
+        $(this).siblings().focus(function() {
+            $(this).hide();
+        });
+    });
+})

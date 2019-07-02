@@ -62,20 +62,20 @@
                   <td data-title="標題" class="num">智慧財產權月刊第244期</td>
                   <td data-title="期別" class="number">244</td>
                   <td data-title="作者"><a href="#">郭彥鋒,簡大翔,莊宗翰,吳家豪</a></td>
-                  <td data-title="電子書"><a href="" class="ebook"></a></td>
-                  <td data-title="文件">
-                    <a href="" class="doc"></a>
-                    <a href="" class="odf"></a>
-                    <a href="" class="pdf"></a>
-                    <a href="" class="xls"></a>
-                    <a href="" class="ppt"></a>
-                    <a href="" class="jpg"></a>
-                    <a href="" class="mp3"></a>
-                    <a href="" class="mov"></a>
-                    <a href="" class="txt"></a>
-                    <a href="" class="odf"></a>
-                    <a href="" class="other"></a>
-                    <a href="" class="zip"></a>
+                  <td data-title="電子書" class="center"><a href="" class="ebook" title="電子書">電子書</a></td>
+                  <td data-title="文件" class="center">
+                    <a href="" class="doc">doc</a>
+                    <a href="" class="odf">odf</a>
+                    <a href="" class="pdf">pdf</a>
+                    <a href="" class="xls">xls</a>
+                    <a href="" class="ppt">ppt</a>
+                    <a href="" class="jpg">jpg</a>
+                    <a href="" class="mp3">mp3</a>
+                    <a href="" class="mov">mov</a>
+                    <a href="" class="txt">txt</a>
+                    <a href="" class="odf">odf</a>
+                    <a href="" class="other">other</a>
+                    <a href="" class="zip">zip</a>
                   </td>
                 </tr>
                 <tr>
@@ -84,8 +84,8 @@
                   <td data-title="標題" class="num">智慧財產權月刊第244期</td>
                   <td data-title="期別" class="number">244</td>
                   <td data-title="作者"><a href="#">郭彥鋒,簡大翔,莊宗翰,吳家豪</a></td>
-                  <td data-title="電子書"></td>
-                  <td data-title="文件"></td>
+                  <td data-title="電子書" class="center"></td>
+                  <td data-title="文件" class="center"></td>
                 </tr>
                 <tr>
                   <td data-title="編號" class="num">03</td>
@@ -93,8 +93,8 @@
                   <td data-title="標題" class="num">智慧財產權月刊第244期</td>
                   <td data-title="期別" class="number">244</td>
                   <td data-title="作者"><a href="#">郭彥鋒,簡大翔,莊宗翰,吳家豪</a></td>
-                  <td data-title="電子書"></td>
-                  <td data-title="文件"></td>
+                  <td data-title="電子書" class="center"></td>
+                  <td data-title="文件" class="center"></td>
                 </tr>
                 <tr>
                   <td data-title="編號" class="num">04</td>
@@ -102,8 +102,8 @@
                   <td data-title="標題" class="num">智慧財產權月刊第244期</td>
                   <td data-title="期別" class="number">244</td>
                   <td data-title="作者"><a href="#">郭彥鋒,簡大翔,莊宗翰,吳家豪</a></td>
-                  <td data-title="電子書"></td>
-                  <td data-title="文件"></td>
+                  <td data-title="電子書" class="center"></td>
+                  <td data-title="文件" class="center"></td>
                 </tr>
                 <tr>
                   <td data-title="編號" class="num">05</td>
@@ -111,8 +111,8 @@
                   <td data-title="標題" class="num">智慧財產權月刊第244期</td>
                   <td data-title="期別" class="number">244</td>
                   <td data-title="作者"><a href="#">郭彥鋒,簡大翔,莊宗翰,吳家豪</a></td>
-                  <td data-title="電子書"></td>
-                  <td data-title="文件"></td>
+                  <td data-title="電子書" class="center"></td>
+                  <td data-title="文件" class="center"></td>
                 </tr>
                 <tr>
                   <td data-title="編號" class="num">06</td>
@@ -120,8 +120,8 @@
                   <td data-title="標題" class="num">智慧財產權月刊第244期</td>
                   <td data-title="期別" class="number">244</td>
                   <td data-title="作者"><a href="#">郭彥鋒,簡大翔,莊宗翰,吳家豪</a></td>
-                  <td data-title="電子書"></td>
-                  <td data-title="文件"></td>
+                  <td data-title="電子書" class="center"></td>
+                  <td data-title="文件" class="center"></td>
                 </tr>
                 <tr>
                   <td data-title="編號" class="num">07</td>
@@ -129,8 +129,8 @@
                   <td data-title="標題" class="num">智慧財產權月刊第244期</td>
                   <td data-title="期別" class="number">244</td>
                   <td data-title="作者"><a href="#">郭彥鋒,簡大翔,莊宗翰,吳家豪</a></td>
-                  <td data-title="電子書"></td>
-                  <td data-title="文件"></td>
+                  <td data-title="電子書" class="center"></td>
+                  <td data-title="文件" class="center"></td>
                 </tr>
                 <tr>
                   <td data-title="編號" class="num">08</td>
@@ -138,8 +138,8 @@
                   <td data-title="標題" class="num">智慧財產權月刊第244期</td>
                   <td data-title="期別" class="number">244</td>
                   <td data-title="作者"><a href="#">郭彥鋒,簡大翔,莊宗翰,吳家豪</a></td>
-                  <td data-title="電子書"></td>
-                  <td data-title="文件"></td>
+                  <td data-title="電子書" class="center"></td>
+                  <td data-title="文件" class="center"></td>
                 </tr>
                 <tr>
                   <td data-title="編號" class="num">09</td>
@@ -147,8 +147,8 @@
                   <td data-title="標題" class="num">智慧財產權月刊第244期</td>
                   <td data-title="期別" class="number">244</td>
                   <td data-title="作者"><a href="#">郭彥鋒,簡大翔,莊宗翰,吳家豪</a></td>
-                  <td data-title="電子書"></td>
-                  <td data-title="文件"></td>
+                  <td data-title="電子書" class="center"></td>
+                  <td data-title="文件" class="center"></td>
                 </tr>
                 <tr>
                   <td data-title="編號" class="num">10</td>
@@ -156,8 +156,8 @@
                   <td data-title="標題" class="num">智慧財產權月刊第244期</td>
                   <td data-title="期別" class="number">244</td>
                   <td data-title="作者"><a href="#">郭彥鋒,簡大翔,莊宗翰,吳家豪</a></td>
-                  <td data-title="電子書"></td>
-                  <td data-title="文件"></td>
+                  <td data-title="電子書" class="center"></td>
+                  <td data-title="文件" class="center"></td>
                 </tr>
               </tbody>
             </table>

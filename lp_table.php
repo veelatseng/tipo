@@ -66,7 +66,7 @@
                   <td data-title="得獎人姓名">廖敏男</td>
                 </tr>
                 <tr>
-                  <td data-title="編號" class="num">02</td>
+                  <td data-title="序號" class="num">02</td>
                   <td data-title="獎牌" class="brand">金牌</td>
                   <td data-title="年度" class="num">105年</td>
                   <td data-title="專利字號" class="number">I457906</td>
@@ -74,7 +74,7 @@
                   <td data-title="得獎人姓名">廖敏男</td>
                 </tr>
                 <tr>
-                  <td data-title="編號" class="num">03</td>
+                  <td data-title="序號" class="num">03</td>
                   <td data-title="獎牌" class="brand">金牌</td>
                   <td data-title="年度" class="num">105年</td>
                   <td data-title="專利字號" class="number">I457906</td>
@@ -82,7 +82,7 @@
                   <td data-title="得獎人姓名">廖敏男</td>
                 </tr>
                 <tr>
-                  <td data-title="編號" class="num">04</td>
+                  <td data-title="序號" class="num">04</td>
                   <td data-title="獎牌" class="brand">金牌</td>
                   <td data-title="年度" class="num">105年</td>
                   <td data-title="專利字號" class="number">I457906</td>
@@ -90,7 +90,7 @@
                   <td data-title="得獎人姓名">廖敏男</td>
                 </tr>
                 <tr>
-                  <td data-title="編號" class="num">05</td>
+                  <td data-title="序號" class="num">05</td>
                   <td data-title="獎牌" class="brand">金牌</td>
                   <td data-title="年度" class="num">105年</td>
                   <td data-title="專利字號" class="number">I457906</td>
@@ -98,7 +98,7 @@
                   <td data-title="得獎人姓名">廖敏男</td>
                 </tr>
                 <tr>
-                  <td data-title="編號" class="num">06</td>
+                  <td data-title="序號" class="num">06</td>
                   <td data-title="獎牌" class="brand">金牌</td>
                   <td data-title="年度" class="num">105年</td>
                   <td data-title="專利字號" class="number">I457906</td>
@@ -106,7 +106,7 @@
                   <td data-title="得獎人姓名">廖敏男</td>
                 </tr>
                 <tr>
-                  <td data-title="編號" class="num">07</td>
+                  <td data-title="序號" class="num">07</td>
                   <td data-title="獎牌" class="brand">金牌</td>
                   <td data-title="年度" class="num">105年</td>
                   <td data-title="專利字號" class="number">I457906</td>
@@ -114,7 +114,7 @@
                   <td data-title="得獎人姓名">廖敏男</td>
                 </tr>
                 <tr>
-                  <td data-title="編號" class="num">08</td>
+                  <td data-title="序號" class="num">08</td>
                   <td data-title="獎牌" class="brand">金牌</td>
                   <td data-title="年度" class="num">105年</td>
                   <td data-title="專利字號" class="number">I457906</td>
@@ -122,7 +122,7 @@
                   <td data-title="得獎人姓名">廖敏男</td>
                 </tr>
                 <tr>
-                  <td data-title="編號" class="num">09</td>
+                  <td data-title="序號" class="num">09</td>
                   <td data-title="獎牌" class="brand">金牌</td>
                   <td data-title="年度" class="num">105年</td>
                   <td data-title="專利字號" class="number">I457906</td>
@@ -130,7 +130,7 @@
                   <td data-title="得獎人姓名">廖敏男</td>
                 </tr>
                 <tr>
-                  <td data-title="編號" class="num">10</td>
+                  <td data-title="序號" class="num">10</td>
                   <td data-title="獎牌" class="brand">金牌</td>
                   <td data-title="年度" class="num">105年</td>
                   <td data-title="專利字號" class="number">I457906</td>
