@@ -749,5 +749,241 @@
 			border-right: 1px solid #ccc;
 		}
 	}
+}
+.map{
+	overflow: hidden;
+	height: auto;
+	margin-bottom: 1.5em;
+	position: relative;
+	background: #C8E9FB; 
+	border: 1px solid #ccc;
+	@include screen('mobile') {
+		border: 0px;
+	}
+	.nation{
+		position: absolute;
+		z-index: 9;
+		right: 3%;
+		top: 3%;
+		@include screen('mobile') {
+			position: relative;
+			right: auto;top: auto;
+		}
+		ul{
+			@include li-reset;
+			@include screen('mobile') {
+				padding-bottom: 1em;
+				background: #fff;
+			}
+		}
+		li{
+			display: block;
+			a{
+				padding: 8%;
+				display: block;
+				color: #fff;
+				white-space: nowrap;
+				background: rgba(0,0,0,.8);
+				font-size: 1.125em;
+				@include screen('tablet') {
+					padding: 5% 8%;
+					font-size: 1em;
+				}
+				@include screen('mobile') {
+					background: #ddd;
+					color: #444;
+					padding: 5%;
+					border-bottom: 1px solid #fff;
+				}
+				&:hover{
+					background: #666;
+					color: #fff;
+				}
+				&:before{
+					content: "";
+					width: 39px;
+					height: 25px;
+					display: inline-block;
+					vertical-align: middle;
+					margin-right: .5em;
+				}
+				&.singapore:before{
+					background: url(../images/flag_singapore.png) no-repeat 0 0;
+					background-size: cover;
+				}
+				&.indonesia:before{
+					background: url(../images/flag_indonesia.png) no-repeat 0 0;
+					background-size: cover;
+				}
+				&.malaysia:before{
+					background: url(../images/flag_malaysia.png) no-repeat 0 0;
+					background-size: cover;
+				}
+				&.myanmar:before{
+					background: url(../images/flag_myanmar.png) no-repeat 0 0;
+					background-size: cover;
+				}
+				&.vietnam:before{
+					background: url(../images/flag_vietnam.png) no-repeat 0 0;
+					background-size: cover;
+				}
+				&.cambodia:before{
+					background: url(../images/flag_cambodia.png) no-repeat 0 0;
+					background-size: cover;
+				}
+				&.philippine:before{
+					background: url(../images/flag_philippine.png) no-repeat 0 0;
+					background-size: cover;
+				}
+				&.laos:before{
+					background: url(../images/flag_laos.png) no-repeat 0 0;
+					background-size: cover;
+				}
+				&.thailand:before{
+					background: url(../images/flag_thailand.png) no-repeat 0 0;
+					background-size: cover;
+				}
+				&.singapore:before{
+					background: url(../images/flag_singapore.png) no-repeat 0 0;
+					background-size: cover;
+				}
+			}
+		}
+	}	
+
+	svg#map{
+		width: 100%;
+		height: auto;
+		min-height: 750px;
+		position: relative;
+		z-index: 8;
+		path{
+			fill: #fff;
+			stroke:#7C7C7A;
+			stroke-width:0.5;
+
+		}
+		a{
+			path{
+				stroke:#444;
+				stroke-width:0.5;
+			}
+			&.sg{
+				path{
+					fill:#FF0000;
+				}
+				&:hover{
+					path {
+						fill: #db0f00;
+					}
+				}
+			}
+			&.id{
+				path{
+					fill:#dfe455;
+				}
+				&:hover{
+					path {
+						fill: #f6ff00;
+					}
+				}
+			}
+			&.my{
+				path{
+					fill:#2198A0;
+				}
+				&:hover{
+					path {
+						fill: #10d5e2;
+					}
+				}
+			}
+			&.mm{
+				path{
+					fill:#9E78C5;
+				}
+				&:hover{
+					path {
+						fill: #894fc4;
+					}
+				}
+			}
+			&.vn{
+				path{
+					fill:#45BE8C;
+				}
+				&:hover{
+					path {
+						fill: #00e385;
+					}
+				}
+			}
+			&.kh{
+				path{
+					fill:#9BC242;
+				}
+				&:hover{
+					path {
+						fill: #77a510;
+					}
+				}
+			}
+			&.ph{
+				path{
+					fill:#E55542;
+				}
+				&:hover{
+					path {
+						fill: #e3321b;
+					}
+				}
+			}
+			&.la{
+				path{
+					fill:#F0BB27;
+				}
+				&:hover{
+					path {
+						fill: #ffe400;
+					}
+				}
+			}
+			&.th{
+				path{
+					fill:#EA8F30;
+				}
+				&:hover{
+					path {
+						fill: #ff7800;
+					}
+				}
+			}
+			&.bn{
+				path{
+					fill:#FD57B1;
+				}
+				&:hover{
+					path {
+						fill: #e71888;
+					}
+				}
+			}
+			&:focus,&.focus{
+				path{
+					fill: #7C7C7A;
+					// -webkit-filter: drop-shadow(3px 2px 2px rgba(0,0,0,.7) );
+					// filter: drop-shadow(3px 3px 2px rgba(0,0,0,.7) );	
+				}
+			}	
+		}
+		path, text {
+			opacity: 1;
+			display: block;
+			z-index: 1;
+		}
+		
+	}
 
 }
+
+
