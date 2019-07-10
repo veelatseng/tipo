@@ -768,6 +768,7 @@
 		@include screen('mobile') {
 			position: relative;
 			right: auto;top: auto;
+
 		}
 		ul{
 			@include li-reset;
@@ -795,7 +796,7 @@
 					padding: 5%;
 					border-bottom: 1px solid #fff;
 				}
-				&:hover{
+				&:hover,&:focus,&.active{
 					background: #666;
 					color: #fff;
 				}
@@ -809,61 +810,153 @@
 				}
 				&.singapore:before{
 					background: url(../images/flag_singapore.png) no-repeat 0 0;
-					background-size: cover;
+					background-size: contain;
 				}
 				&.indonesia:before{
 					background: url(../images/flag_indonesia.png) no-repeat 0 0;
-					background-size: cover;
+					background-size: contain;
 				}
 				&.malaysia:before{
 					background: url(../images/flag_malaysia.png) no-repeat 0 0;
-					background-size: cover;
+					background-size: contain;
 				}
 				&.myanmar:before{
 					background: url(../images/flag_myanmar.png) no-repeat 0 0;
-					background-size: cover;
+					background-size: contain;
 				}
 				&.vietnam:before{
 					background: url(../images/flag_vietnam.png) no-repeat 0 0;
-					background-size: cover;
+					background-size: contain;
 				}
 				&.cambodia:before{
 					background: url(../images/flag_cambodia.png) no-repeat 0 0;
-					background-size: cover;
+					background-size: contain;
 				}
 				&.philippine:before{
 					background: url(../images/flag_philippine.png) no-repeat 0 0;
-					background-size: cover;
+					background-size: contain;
 				}
 				&.laos:before{
 					background: url(../images/flag_laos.png) no-repeat 0 0;
-					background-size: cover;
+					background-size: contain;
 				}
 				&.thailand:before{
 					background: url(../images/flag_thailand.png) no-repeat 0 0;
-					background-size: cover;
+					background-size: contain;
 				}
 				&.singapore:before{
 					background: url(../images/flag_singapore.png) no-repeat 0 0;
-					background-size: cover;
+					background-size: contain;
 				}
 			}
 		}
-	}	
-
+	}	 
+	.nation2{
+		position: absolute;
+		z-index: 9;
+		left: 3%;
+		top: 3%;
+		@include screen('mobile') {
+			position: relative;
+			left: auto;top: auto;
+		}
+		ul{
+			@include li-reset;
+			@include screen('mobile') {
+				padding-bottom: 1em;
+				background: #fff;
+			}
+		}
+		li{
+			display: block;
+			a{
+				padding: 8%;
+				display: block;
+				color: #fff;
+				white-space: nowrap;
+				background: rgba(0,0,0,.8);
+				font-size: 1.125em;
+				@include screen('tablet') {
+					padding: 5% 8%;
+					font-size: 1em;
+				}
+				@include screen('mobile') {
+					background: #ddd;
+					color: #444;
+					padding: 5%;
+					border-bottom: 1px solid #fff;
+				}
+				&:hover,&:focus,&.active{
+					background: #666;
+					color: #fff;
+				}
+				&:before{
+					content: "";
+					width: 39px;
+					height: 25px;
+					display: inline-block;
+					vertical-align: middle;
+					margin-right: .5em;
+				}
+				&.india:before{
+					background: url(../images/flag_india.png) no-repeat 0 0;
+					background-size: contain;
+				}
+				&.pakistan:before{
+					background: url(../images/flag_pakistan.png) no-repeat 0 0;
+					background-size: contain;
+				}
+				&.bangladesh:before{
+					background: url(../images/flag_bangladesh.png) no-repeat 0 0;
+					background-size: contain;
+				}
+				&.nepal:before{
+					background: url(../images/flag_nepal.png) no-repeat 0 0;
+					background-size: contain;
+					height: 50px;
+				}
+				&.sriLanka:before{
+					background: url(../images/flag_sriLanka.png) no-repeat 0 0;
+					background-size: contain;
+				}
+				&.bhutan:before{
+					background: url(../images/flag_bhutan.png) no-repeat 0 0;
+					background-size: contain;
+				}
+			}
+		}
+	}
+	.sg_map{
+		width: 80px;
+		height: 80px;
+		display: block;
+		background: url(../images/singapore_map.png) no-repeat 0 0;
+		background-size: contain;
+		position: absolute;
+		left: 24%;
+		top: 66%;
+		z-index: 10;
+		border: 2px solid #fff;
+		border-radius: 50%;
+		box-shadow: 0 3px 8px rgba(0,0,0,.5);
+		display: none;
+	}
 	svg#map{
 		width: 100%;
 		height: auto;
 		min-height: 750px;
 		position: relative;
 		z-index: 8;
+		@include screen('mobile') {
+			display: none;
+		}
 		path{
 			fill: #fff;
 			stroke:#7C7C7A;
 			stroke-width:0.5;
 
 		}
-		a{
+		g{
 			path{
 				stroke:#444;
 				stroke-width:0.5;
@@ -965,6 +1058,66 @@
 				&:hover{
 					path {
 						fill: #e71888;
+					}
+				}
+			}
+			&.in{
+				path{
+					fill:#aec754;
+				}
+				&:hover{
+					path {
+						fill: #acd80e;
+					}
+				}
+			}
+			&.pk{
+				path{
+					fill:#5abd8c;
+				}
+				&:hover{
+					path {
+						fill: #00d16a;
+					}
+				}
+			}
+			&.bd{
+				path{
+					fill:#56b6c3;
+				}
+				&:hover{
+					path {
+						fill: #1bd5ee;
+					}
+				}
+			}
+			&.np{
+				path{
+					fill:#f6cd36;
+				}
+				&:hover{
+					path {
+						fill: #ffe400;
+					}
+				}
+			}
+			&.lk{
+				path{
+					fill:#d0684e;
+				}
+				&:hover{
+					path {
+						fill: #d34623;
+					}
+				}
+			}
+			&.bt{
+				path{
+					fill:#ff9c00;
+				}
+				&:hover{
+					path {
+						fill: #ff7e00;
 					}
 				}
 			}

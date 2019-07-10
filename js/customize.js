@@ -203,10 +203,10 @@ $(function() {
         speed: 300,
         slidesToShow: 5,
         slidesToScroll: 1,
-        autoplay: true,
+        // autoplay: true,
         pauseOnHover: true,
         arrow: true,
-        centerMode: true,
+        // centerMode: true,
         centerPadding: '20px',
         responsive: [{
             breakpoint: 992,
@@ -216,7 +216,7 @@ $(function() {
                 infinite: true,
                 dots: false,
                 arrows: true,
-                centerMode: true,
+                // centerMode: true,
                 centerPadding: '0px'
             }
         }, {
@@ -225,7 +225,7 @@ $(function() {
                 slidesToShow: 1,
                 slidesToScroll: 1,
                 arrows: true,
-                centerMode: true,
+                // centerMode: true,
                 centerPadding: '0px'
             }
         }, {
@@ -234,7 +234,7 @@ $(function() {
                 slidesToShow: 1,
                 slidesToScroll: 1,
                 arrows: true,
-                centerMode: true,
+                // centerMode: true,
                 centerPadding: '0px'
             }
         }]
@@ -357,26 +357,41 @@ $(function(){
     });  
 })
 $(function(){
-    $(".nation ul li a").hover(function() {
+    $(".nation ul li a,.nation2 ul li a").hover(function() {
         var nation_index = $(this).parents("li").index();
-        $("svg").find("a").addClass('focus');
-        $("svg").find("a").eq(nation_index).removeClass('focus');
+        $("svg .mapblock").addClass('focus');
+        $("svg .mapblock").eq(nation_index).removeClass('focus');
     }, function() {
-        $("svg a").removeClass('focus');
+        $("svg .mapblock").removeClass('focus');
     });
 
-    $(".nation ul li a").focus(function() {
+    $(".nation ul li a,.nation2 ul li a").focus(function() {
         var nation_index = $(this).parent("li").index();
-        $("svg").find("a").addClass('focus');
-        $("svg").find("a").eq(nation_index).removeClass('focus');
+        $("svg .mapblock").addClass('focus');
+        $("svg .mapblock").eq(nation_index).removeClass('focus');
     });
 
-    $(".nation ul li a").blur(function() {
-        $("svg a").removeClass('focus');
+    $(".nation ul li a,.nation2 ul li a").blur(function() {
+        $("svg g").removeClass('focus');
     });
     $(".nation .singapore").hover(function() {
-        $("#map .sg").addClass('larger_sg')
+        $(".sg_map").fadeIn()
     }, function() {
-        $("#map .sg").removeClass('larger_sg')
+        $(".sg_map").fadeOut()
     });
-})
+    $(".nation .singapore").focus(function() {
+        $(".sg_map").fadeIn()
+    });
+
+    $(".nation .singapore").blur(function() {
+        $(".sg_map").fadeOut()
+    });
+
+    $(".mapblock").hover(function() {
+        var map_index = $(this).index();
+        $(".nation ul li,.nation2 ul li").eq(map_index).find("a").addClass('active');
+    }, function() {
+        $(".nation ul li,.nation2 ul li").find("a").removeClass('active');
+    });
+});
+

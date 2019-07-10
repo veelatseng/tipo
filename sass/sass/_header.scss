@@ -260,19 +260,20 @@
     max-width: 50%;
     position: absolute;
     right: 1em;
-    top: 5em;
+    top: 6em;
     vertical-align: middle;
     padding: 1em;
     overflow: hidden;
     @include box-sizing;
     display: none;
-    border-radius: 1em;
+    border-radius: .2em;
     background: RGBA(0, 0, 0, .75);
     label {
         font-size: 0em;
         height: 0;
         padding: 0;
         margin: 0;
+        display: none;
     }
     .form_grp {
         margin-bottom: 0;
@@ -284,7 +285,8 @@
             padding: .2em 35px .2em .5em;
             box-shadow: none;
             &[type="text"] {
-                margin-top: -2.1em;
+                // margin-top: -2.1em;
+                margin-top: 4px;
                 &:focus {
                     box-shadow: 0px 0px 0px 3px $aHover;
                     outline: none;
@@ -300,7 +302,8 @@
                 border: none;
                 display: block;
                 opacity: .8;
-                margin-top: -42px;
+                // margin-top: -42px;
+                margin-top: -30px;
                 margin-left: auto;
                 margin-right: .2em;
                 position: relative;
