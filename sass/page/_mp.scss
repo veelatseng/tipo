@@ -118,6 +118,7 @@
             line-height: 2em;
             padding: .3em .5em;
             @include text-overflow;
+            background: rgba(0,0,0,.5);
           }
         }
         p {
@@ -150,150 +151,60 @@
       }
     }
   }
-  // .slick-dots {
-  //   bottom: 4em;
-  //   @include screen('mobile') {
-  //     bottom: 1em;
-  //   }
-  // }
-  // .slick-dots li button {
-  //   &:hover, &:focus {
-  //     outline: none;
-  //     box-shadow: none !important;
-  //   }
-  // }
-  // .slick-dots li button:before {
-  //   width: 12px;
-  //   height: 12px;
-  //   background: transparent;
-  //   box-shadow: 0 0 0 2px rgba(255,255,255,1) inset;
-  //   opacity: 1;
-  //   @include screen('mobile') {
-  //     box-shadow: 0 0 0 2px #ccc inset;
-  //   }
-  // }
-  // .slick-dots li.slick-active button:before, .slick-dots li button:hover:before {
-  //   background: #FFF;
-  //   @include screen('mobile') {
-  //     background: #ccc;
-  //   }
-  // }
-  // .slick-dots li button:focus:before {
-  //   background: #FFF;
-  //   @include screen('tablet') {
-  //     background: #ccc;
-  //   } 
-  // }
-  // .slick-prev,.slick-next{
-  //   width: 51px!important;
-  //   height: 51px!important;
-  //   top: 52%;
-  //   left: 50%;
-  //   &:hover,&:focus{
-  //     border-radius: 0px;
-  //   }
-  //   @include screen('notebook') {
-  //     top: 42.5%;
-  //   }
-  //   @include screen('mobile') {
-  //     top: 35%;
-  //   }
-  // }
-  // .slick-prev {
-  //   background: url(../images/mpSlider_left.png) no-repeat center center;  
-  //   margin-left: -30%;
-  //   @include screen('notebook') {
-  //     left: 6.5%;
-  //     margin-left: auto;
-  //   }
-  //   @include screen('mobile') {
-  //     left: 5px;
-  //     margin-left: auto;
-  //   }
-  //   &:hover, &:focus {
-  //     background: url(../images/mpSlider_left.png) no-repeat center center RGBA(0, 0, 0, .5);
-  //   }
-  // }
-  // .slick-next {
-  //   background: url(../images/mpSlider_right.png) no-repeat center center;
-  //   margin-left: -25%;
-  //   @include screen('notebook') {
-  //     left: 12%;
-  //     margin-left: 0;
-  //   }
-  //   @include screen('mobile') {
-  //     right: 5px;
-  //     margin-left: auto;
-  //   }
-  //   &:hover, &:focus {
-  //     background: url(../images/mpSlider_right.png) no-repeat center center RGBA(0, 0, 0, .5);
-  //   }
-  // }
   .slick-dots {
     bottom: 1.5em;
+    @include screen('mobile') {
+      bottom: -1.5em;
+    }
   }
-  .slick-dots li button {
+  .slick-dots li button:before {
+    background: transparent;
+    box-shadow: 0 0 0 2px rgba(255,255,255,1) inset;
+    opacity: 1;
+    @include screen('mobile') {
+      box-shadow: 0 0 0 2px #DDD inset;
+      background: #DDD;
+    }
+  }
+  .slick-dots li.slick-active button:before {
+    background: #FFF;
+    @include screen('mobile') {
+      background: #00db87;
+      box-shadow: 0 0 0 2px #00db87 inset;
+    }
+  }
+  .slick-dots li button:hover:before{
+    background: #00db87;
+  }
+  .slick-dots li button:focus:before {
+    background: #FFF;
+  }
+  .slick-prev {
+    filter: invert(0);
+    left: 10px;
+    @include screen('mobile') {
+      left: 5px;
+    }
     &:hover, &:focus {
-      outline: none;
-      box-shadow: none !important;
-
+      filter: invert(0);
     }
   }
-      // .slick-dots li button:before {
-      //   background: #FFF;
-      //   opacity: 1;
-      // }
-      // .slick-dots li.slick-active button:before, .slick-dots li button:hover:before {
-      //   background: $color-yellow;
-      // }
-      .slick-dots li button:before {
-        width: 12px;
-        height: 12px;
-        background: transparent;
-        box-shadow: 0 0 0 2px rgba(255,255,255,1) inset;
-        opacity: 1;
-        @include screen('mobile') {
-          background: #DDD;
-        }
-      }
-      .slick-dots li.slick-active button:before {
-        background: #FFF;
-        // @include screen('mobile') {
-        //   background: #FFF;
-        // }
-      }
-      .slick-dots li button:hover:before{
-        background: #00db87;
-      }
-      .slick-dots li button:focus:before {
-        background: #FFF;
-      }
-      .slick-prev,.slick-next{
-        height: 70px!important;
-      }
-      .slick-prev {
-        background: url(../images/white_arrow_left.png) no-repeat center center;
-        left: 10px;
-        @include screen('mobile') {
-          left: 5px;
-        }
-        &:hover, &:focus {
-          background: url(../images/white_arrow_left.png) no-repeat center center RGBA(0, 0, 0, .5);
-        }
-      }
-      .slick-next {
-        background: url(../images/white_arrow_right.png) no-repeat center center;
-        right: 10px;
-        @include screen('mobile') {
-          right: 5px;
-        }
-        &:hover, &:focus {
-          background: url(../images/white_arrow_right.png) no-repeat center center RGBA(0, 0, 0, .5);
-        }
-      }
+  .slick-next {
+    filter: invert(0);
+    right: 10px;
+    @include screen('mobile') {
+      right: 5px;
     }
+    &:hover, &:focus {
+      filter: invert(0);
+    }
+  }
+}
 // tab
 .tab_block {
+  @include screen('mobile') {
+    padding: 1em;
+  }
   a.more {
     @extend %clearfix;
   }
@@ -329,7 +240,7 @@
     padding: 2em 0 .5em;
     margin: 1em -15px;
     @include screen('mobile') {
-      padding: .5em 1em;
+      padding: .5em 0;
     }
     .col {
       margin-bottom: 1em;
@@ -910,31 +821,10 @@
       .slick-dots {
         bottom: -1.5em;
       }
-      .slick-dots li button {
-        &:hover, &:focus {
-          outline: none;
-          box-shadow: none !important;
-        }
-      }
-      // .slick-dots li button:before {
-      //   background: #FFF;
-      //   opacity: 1;
-      // }
-      // .slick-dots li.slick-active button:before, .slick-dots li button:hover:before {
-      //   background: $color-yellow;
-      // }
-      .slick-dots li button:before {
-        width: 12px;
-        height: 12px;
-        background: transparent;
-        box-shadow: 0 0 0 2px rgba(255,255,255,1) inset;
-        opacity: 1;
-        @include screen('mobile') {
-          background: #DDD;
-        }
-      }
-      .slick-dots li.slick-active button:before, .slick-dots li button:hover:before {
+      .slick-dots li.slick-active button:before, 
+      .slick-dots li button:hover:before {
         background: #FFF;
+        box-shadow: 0 0 0;
         @include screen('mobile') {
           background: #FFF;
         }
@@ -942,27 +832,24 @@
       .slick-dots li button:focus:before {
         background: #FFF;
       }
-      .slick-prev,.slick-next{
-        height: 70px!important;
-      }
       .slick-prev {
-        background: url(../images/white_arrow_left.png) no-repeat center center;
+        filter: invert(0);
         left: 10px;
         @include screen('mobile') {
           left: 5px;
         }
         &:hover, &:focus {
-          background: url(../images/white_arrow_left.png) no-repeat center center RGBA(0, 0, 0, .5);
+          filter: invert(0);
         }
       }
       .slick-next {
-        background: url(../images/white_arrow_right.png) no-repeat center center;
+        filter: invert(0);
         right: 10px;
         @include screen('mobile') {
           right: 5px;
         }
         &:hover, &:focus {
-          background: url(../images/white_arrow_right.png) no-repeat center center RGBA(0, 0, 0, .5);
+          filter: invert(0);
         }
       }
       .video, .photo {
@@ -1076,106 +963,84 @@
           }
         }
         ul {
-                // .slick-dots {
-                //   bottom: 4em;
-                //   @include screen('mobile') {
-                //     bottom: 1em;
-                //   }
-                // }
-                // .slick-dots li button {
-                //   &:hover, &:focus {
-                //     outline: none;
-                //     box-shadow: none !important;
-                //   }
-                // }
-                // .slick-dots li button:before {
-                //   background: #FFF;
-                //   opacity: 1;
-                // }
-                // .slick-dots li.slick-active button:before, .slick-dots li button:hover:before {
-                //   background: $color-yellow;
-                //   @include screen('mobile') {
-                //     background: $color-yellow;
-                //   }
-                // }
-                // .slick-dots li button:focus:before {
-                //   background: $color-yellow;
-                // }
-                @include li-reset;
-                @include gutter;
-                .slick-dots {
-                  bottom: .5em;
+          @include li-reset;
+          @include gutter;
+          .slick-dots {
+            bottom: .5em;
+          }
+          .slick-dots li button:before{
+            background: transparent;
+            box-shadow: 0 0 0 2px rgba(255,255,255,1) inset;
+            opacity: 1;
+          }  
+          li {
+            margin: 0px .5em;
+            a {
+              position: relative;
+              display: block;
+              &:hover,&:focus {
+                .pic {
+                  background: #DDD;
                 }
-                li {
-                  margin: 0px .5em;
-                  a {
-                    position: relative;
-                    display: block;
-                    &:hover,
-                    &:focus {
-                      .pic {
-                        background: #DDD;
-                      }
-                      span {
-                        color: $color-yellow;
-                      }
-                    }
-                    &:focus {
-                      &:before {
-                        position: absolute;
-                        content: "";
-                        top: 0;
-                        left: 0;
-                        right: 0;
-                        bottom: 0;
-                        box-shadow: 0px 0px 0px 5px $color-yellow inset;
-                        z-index: 9;
-                        @include screen('mobile') {
-                          box-shadow: none;
-                        }
-                      }
-                    }
-                  }
-                  text-align: center;
-                  .pic {
-                    width: 160px;
-                    height: 160px;
-                    margin: 0 auto .5em;
-                    position: relative;
-                    display: block;
-                    overflow: hidden;
-                    @include border-radius(50%);
-                    background: $secondaryColor;
-                    img {
-                      width: 100%;
-                      height: 100%;
-                      position: absolute;
-                      top: 0;
-                      left: 0;
-                      right: 0;
-                      bottom: 0;
-                      object-fit: cover;
-                    }
-                  }
-                  span {
-                    font-size: 1em;
-                    text-align: center;
-                    width: 80%;
-                    line-height: 1.5em;
-                    display: block;
-                    height: 3em;
-                    margin: 0px auto;
-                    overflow: hidden;
-                    color: #FFF;
-                    font-weight: bold;
-                    // text-shadow: 1px 1px 2px RGBA(0, 0, 0, .75);
+                span {
+                  color: $color-yellow;
+                }
+              }
+              &:focus {
+                &:before {
+                  position: absolute;
+                  content: "";
+                  top: 0;
+                  left: 0;
+                  right: 0;
+                  bottom: 0;
+                  box-shadow: 0px 0px 0px 5px $color-yellow inset;
+                  z-index: 9;
+                  @include screen('mobile') {
+                    box-shadow: none;
                   }
                 }
               }
             }
+            text-align: center;
+            .pic {
+              width: 160px;
+              height: 160px;
+              margin: 0 auto .5em;
+              position: relative;
+              display: block;
+              overflow: hidden;
+              @include border-radius(50%);
+              background: $secondaryColor;
+              img {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                object-fit: cover;
+              }
+            }
+            span {
+              font-size: 1em;
+              text-align: center;
+              width: 80%;
+              line-height: 1.5em;
+              display: block;
+              height: 3em;
+              margin: 0px auto;
+              overflow: hidden;
+              color: #FFF;
+              font-weight: bold;
+            }
           }
         }
       }
+    }
+  }
+}
 // 國際事務
 .international {
   .container {
@@ -1194,7 +1059,6 @@
   }
   ul {
     @include li-reset;
-    // margin: 0 60px 1em;
     margin: 0 40px 1em;
     @include screen('mobile') {
       margin-bottom: 0;
@@ -1211,20 +1075,20 @@
         opacity: 1;
 
       }
-      &.slick-center {
-        transform: scale(1.25);
-        opacity: 1;
-        z-index: 9;
-        @include screen('tablet') {
-          transform: scale(1.125);
-        }
-        @include screen('mobile') {
-          transform: none;
-        }
-        .pic{
-          box-shadow: 0 1px 3px rgba(0,0,0,.6);
-        }
-      }
+      // &.slick-center {
+      //   transform: scale(1.25);
+      //   opacity: 1;
+      //   z-index: 9;
+      //   @include screen('tablet') {
+      //     transform: scale(1.125);
+      //   }
+      //   @include screen('mobile') {
+      //     transform: none;
+      //   }
+      //   .pic{
+      //     box-shadow: 0 1px 3px rgba(0,0,0,.6);
+      //   }
+      // }
       a {
         display: block;
         h3 {
@@ -1263,37 +1127,18 @@
       }
     }
   }
-  // .slick-prev {
-  //   // background: url(../vendor/slick/icon_arrow_left_inverse.png) no-repeat center center;
-  //   background-size: 100%;
-  //   // left: -45px;
-  //   left: -25px;
-  //   &:hover, &:focus {
-  //     background: url(../vendor/slick/icon_arrow_left.png) no-repeat center center RGBA(0, 0, 0, .5);
-  //     background-size: 100%;
-  //   }
-  //   @include screen('mobile') {
-  //     background: url(../vendor/slick/icon_arrow_left_inverse.png) no-repeat center center;
-  //     background-size: 100%;
-  //     left: -25px;
-  //   }
-  // }
-  // .slick-next {
-  //   background: url(../vendor/slick/icon_arrow_right_inverse.png) no-repeat center center;
-  //   background-size: 100%;
-  //   // right: -45px;
-  //   right: -25px;
-  //   &:hover, &:focus {
-  //     background: url(../vendor/slick/icon_arrow_right.png) no-repeat center center RGBA(0, 0, 0, .5);
-  //     background-size: 100%;
-  //   }
-  //   @include screen('mobile') {
-  //     background: url(../vendor/slick/icon_arrow_right_inverse.png) no-repeat center center;
-  //     background-size: 100%;
-  //     right: -25px;
-  //   }
-  // }
-  
+  .slick-prev {
+    left: -30px;
+    &:hover, &:focus {
+      filter: invert(0);
+    }
+  }
+  .slick-next {
+    right: -30px;
+    &:hover, &:focus {
+      filter: invert(0);
+    }
+  }
 }
 // 儀表板
 .dashboard {
@@ -1497,22 +1342,11 @@
       .slick-dots {
         bottom: -2em;
       }
-      .slick-dots li button {
-        &:hover, &:focus {
-          outline: none;
-          box-shadow: none !important;
-        }
-      }
-      .slick-dots li button:before {
-        width: 12px;
-        height: 12px;
+      .slick-dots li button:before{
         background: transparent;
         box-shadow: 0 0 0 2px rgba(255,255,255,1) inset;
         opacity: 1;
-        @include screen('mobile') {
-          background: #DDD;
-        }
-      }
+      }  
       .slick-dots li.slick-active button:before, .slick-dots li button:hover:before {
         background: #FFF;
         @include screen('mobile') {
@@ -1522,27 +1356,26 @@
       .slick-dots li button:focus:before {
         background: #FFF;
       }
-      .slick-prev,.slick-next{
-        height: 70px!important;
-      }
       .slick-prev {
-        background: url(../images/white_arrow_left.png) no-repeat center center;
+        filter: invert(0);
         left: -60px;
         @include screen('mobile') {
           left: 5px;
+          filter: invert(100%);
         }
         &:hover, &:focus {
-          background: url(../images/white_arrow_left.png) no-repeat center center RGBA(0, 0, 0, .5);
+          filter: invert(0);
         }
       }
       .slick-next {
-        background: url(../images/white_arrow_right.png) no-repeat center center;
+        filter: invert(0);
         right: -60px;
         @include screen('mobile') {
           right: 5px;
+          filter: invert(100%);
         }
         &:hover, &:focus {
-          background: url(../images/white_arrow_right.png) no-repeat center center RGBA(0, 0, 0, .5);
+          filter: invert(0);
         }
       }
     }
@@ -1609,16 +1442,16 @@
   @include screen('mobile') {
     @include gutter();
   }
-  .slick-prev {
-    background: url(../vendor/slick/icon_arrow_left_inverse.png) no-repeat center center;
-    background-size: 80%;
-    left: -15px;
-  }
-  .slick-next {
-    background: url(../vendor/slick/icon_arrow_right_inverse.png) no-repeat center center;
-    background-size: 80%;
-    right: -15px;
-  }
+  // .slick-prev {
+  //   background: url(../vendor/slick/icon_arrow_left_inverse.png) no-repeat center center;
+  //   background-size: 80%;
+  //   left: -15px;
+  // }
+  // .slick-next {
+  //   background: url(../vendor/slick/icon_arrow_right_inverse.png) no-repeat center center;
+  //   background-size: 80%;
+  //   right: -15px;
+  // }
   .img-container {
     width: 165px;
     height: 55px;
