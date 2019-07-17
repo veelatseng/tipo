@@ -48,7 +48,11 @@
   @include gutter(0);
   .img-container {
     @include aspect-ratio(5, 2);
+    @include aspect-ratio(100, 31);
     @include screen('notebook') {
+      // @include aspect-ratio(5, 3);
+    }
+    @include screen('tablet') {
       @include aspect-ratio(5, 3);
     }
     @include screen('mobile') {
@@ -1070,11 +1074,7 @@
       min-height: 220px;
       text-align: left;
       transition: .3s ease;
-      opacity: .6;
-      &:hover {
-        opacity: 1;
-
-      }
+      opacity: 1;
       // &.slick-center {
       //   transform: scale(1.25);
       //   opacity: 1;
@@ -1107,13 +1107,19 @@
           h3 {
             color: $aHover;
           }
+          img{
+            transform: scale(1.1);
+          }
         }
       }
       .pic {
         @include aspect-ratio(4, 3);
         width: 100%;
         position: relative;
-        margin-top: 20px;
+        border: 1px solid #dedede;
+        overflow: hidden;
+        // margin-top: 20px;
+
         img {
           position: absolute;
           object-fit: cover;
@@ -1123,6 +1129,7 @@
           left: 0;
           right: 0;
           bottom: 0;
+          transition: all .5s;
         }
       }
     }
