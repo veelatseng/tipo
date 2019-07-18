@@ -876,6 +876,7 @@
 				white-space: nowrap;
 				background: rgba(0,0,0,.8);
 				font-size: 1.125em;
+				width: 100%;
 				@include screen('tablet') {
 					padding: 5% 8%;
 					font-size: 1em;
