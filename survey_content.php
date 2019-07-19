@@ -18,7 +18,6 @@
   <!-- ico -->
   <link rel="icon" type="image/ico" href="images/favicon.ico">
 </head>
-
 <body>
   <!-- 直接跳主內容區 -->
   <a class="goCenter" href="#center" tabindex="1">按Enter到主內容區</a>

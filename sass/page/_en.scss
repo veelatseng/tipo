@@ -114,56 +114,43 @@ body{
 			@include screen('xs_mobile') {
 				margin-top: 0em;
 			}
-			.slick-dots {
-				bottom: -1.5em;
-			}
-			.slick-dots li button {
-				&:hover, &:focus {
-					outline: none;
-					box-shadow: none !important;
-				}
-			}
-			.slick-dots li button:before {
-				width: 12px;
-				height: 12px;
-				background: transparent;
-				box-shadow: 0 0 0 2px rgba(255,255,255,1) inset;
-				opacity: 1;
-				@include screen('mobile') {
-					background: #DDD;
-				}
-			}
-			.slick-dots li.slick-active button:before, .slick-dots li button:hover:before {
-				background: #FFF;
-				@include screen('mobile') {
-					background: #FFF;
-				}
-			}
-			.slick-dots li button:focus:before {
-				background: #FFF;
-			}
+			// .slick-dots {
+			// 	bottom: -1.5em;
+			// }
+			// .slick-dots li button {
+			// 	&:hover, &:focus {
+			// 		outline: none;
+			// 		box-shadow: none !important;
+			// 	}
+			// }
+			// .slick-dots li button:before {
+			// 	width: 12px;
+			// 	height: 12px;
+			// 	background: transparent;
+			// 	box-shadow: 0 0 0 2px rgba(255,255,255,1) inset;
+			// 	opacity: 1;
+			// 	@include screen('mobile') {
+			// 		background: #DDD;
+			// 	}
+			// }
+			// .slick-dots li.slick-active button:before, .slick-dots li button:hover:before {
+			// 	background: #FFF;
+			// 	@include screen('mobile') {
+			// 		background: #FFF;
+			// 	}
+			// }
+			// .slick-dots li button:focus:before {
+			// 	background: #FFF;
+			// }
 			.slick-prev,.slick-next{
 				height: 70px!important;
+				filter: invert(0);
 			}
 			.slick-prev {
-				background: url(../images/white_arrow_left.png) no-repeat center center;
-				left: 10px;
-				@include screen('mobile') {
-					left: 5px;
-				}
-				&:hover, &:focus {
-					background: url(../images/white_arrow_left.png) no-repeat center center RGBA(0, 0, 0, .5);
-				}
+				left: -35px;
 			}
 			.slick-next {
-				background: url(../images/white_arrow_right.png) no-repeat center center;
-				right: 10px;
-				@include screen('mobile') {
-					right: 5px;
-				}
-				&:hover, &:focus {
-					background: url(../images/white_arrow_right.png) no-repeat center center RGBA(0, 0, 0, .5);
-				}
+				right: -35px;
 			}
 			.video, .photo {
 				width: 50%;
@@ -171,12 +158,6 @@ body{
 				margin-bottom: 2em;
 				margin: 1em 0;
 				@include gutter(80px);
-				.slick-prev {
-					left: -35px;
-				}
-				.slick-next {
-					right: -35px;
-				}
 				ul{
 					@include li-reset;
 					@include gutter;
