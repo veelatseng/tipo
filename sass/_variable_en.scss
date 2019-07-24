@@ -33,7 +33,9 @@ $form-focus:				#4bb5c8;				//表單
 //-------------------------------------------------------------字型--------//
 
 // 字型設定
-$font-family:               Lato, "PingFang TC", "Helvetica Neue", Helvetica, 微軟正黑體, Arial, sans-serif;
+// $font-family:               Lato, "PingFang TC", "Helvetica Neue", Helvetica, 微軟正黑體, Arial, sans-serif;
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans&display=swap); 
+$font-family:				'Noto Sans', sans-serif;
 $font-size:					1em;
 
 //-------------------------------------------------------------格線系統-----//

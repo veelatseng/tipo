@@ -79,7 +79,7 @@
         width: 50%;
         left: 50%;
         top: 61%;
-        margin-left: -31.5%;
+        margin-left: -35%;
         text-align: left;
         height: auto;
         color: #FFF;
@@ -89,13 +89,14 @@
         text-shadow: 2px 2px 3px RGBA(0, 0, 0, .75);
         white-space: normal;
         background: none;
-        @include screen('notebook') {
-          top: 51%;
-          margin-left: auto;
-          margin-left: -45%;
-        }
+        // @include screen('notebook') {
+        //   top: 51%;
+        //   margin-left: auto;
+        //   margin-left: -45%;
+        // }
         @include screen('tablet') {
           width: 60%;
+          margin-left: -30%;
         }
         @include screen('mobile') {
           width: 100%;
@@ -185,7 +186,7 @@
   }
   .slick-prev {
     filter: invert(0);
-    left: 10px;
+    left: 70px;
     @include screen('mobile') {
       left: 5px;
     }
@@ -195,7 +196,7 @@
   }
   .slick-next {
     filter: invert(0);
-    right: 10px;
+    right: 70px;
     @include screen('mobile') {
       right: 5px;
     }
