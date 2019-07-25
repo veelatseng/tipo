@@ -138,6 +138,12 @@ div.function {
                         display: none;
                     }
                 }
+                &.rss {
+                    a:before {
+                        background: url(../images/icon_rss.png) no-repeat center center;
+                        background-size: 85%;
+                    }
+                }
                 &.forward {
                     a:before {
                         background: url(../images/basic/icon_forward.png) no-repeat center center;
