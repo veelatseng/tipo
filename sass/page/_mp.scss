@@ -44,8 +44,12 @@
 // 首頁輪播
 .mpSlider {
   width: 100%;
-  // padding-bottom: 3em;
+  padding-top: 4em;
+  background: #000;
   @include gutter(0);
+  @include screen('tablet') {
+    padding-top: 0;
+  }
   .img-container {
     @include aspect-ratio(5, 2);
     @include aspect-ratio(100, 31);
@@ -78,7 +82,7 @@
       .caption {
         width: 50%;
         left: 50%;
-        top: 61%;
+        top: 55%;
         margin-left: -35%;
         text-align: left;
         height: auto;
