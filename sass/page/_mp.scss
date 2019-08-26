@@ -1246,7 +1246,8 @@
       margin: 0px auto 0;
       padding: 1em;
       height: 10em;
-      font-family: "Arial";
+      // font-family: "Arial";
+      font-family: "Noto Sans",sans-serif;
       @include screen('tablet') {
         width: 60%;
       }
@@ -1317,6 +1318,7 @@
         font-size: 1em;
         display: block;
         overflow: hidden;
+        font-family: "Noto Sans TC",sans-serif;
         @include screen('mobile') {
           height: 1.5em;
           bottom: 1em;
@@ -1679,7 +1681,7 @@ body>.quick_link {
         background-size: cover;
       }
     }
-    h3 {
+    h2 {
       vertical-align: middle;
       color: #FFF;
       font-size: 4em;
@@ -1811,13 +1813,14 @@ body>.quick_link {
       }
       a.more {
         @extend %clearfix;
-        font-size: 1.5em;
+        font-size: 1em;
         border: 1px solid #FFF;
         color: #FFF;
         margin: 1em auto 1em 0;
         background: rgba(0, 0, 0, .15) !important;
+        width: 11em;
         &:after {
-          top: .9em;
+          top: 1.1em;
         }
         &:hover, &:focus {
           background: rgba(0, 0, 0, .5) !important;
