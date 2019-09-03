@@ -242,6 +242,22 @@
 			@include make-lg-column(4);
 			@include gutter(40px);
 			margin-bottom: 10px;
+			&:nth-child(3n+1){
+				clear: left;
+				@include screen('notebook') {
+					float: left;
+					clear: none;		
+				}
+			}
+			&:nth-child(2n+1){
+				float: left;
+				@include screen('tablet') {
+					clear: left;
+				}
+			}
+			@include screen('mobile') {
+				float: none;clear: both;
+			}
 			a {
 				display: block;
 				text-align: left;
