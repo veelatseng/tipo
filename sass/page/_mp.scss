@@ -973,6 +973,7 @@
           }
           @include screen('mobile') {
             text-align: center;
+            margin-left: 0;
           }
         }
         ul {
