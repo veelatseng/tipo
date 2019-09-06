@@ -246,7 +246,10 @@
 				clear: left;
 				@include screen('notebook') {
 					float: left;
-					clear: none;		
+					clear: left;		
+				}
+				@include screen('tablet') {
+					clear: none;
 				}
 			}
 			&:nth-child(2n+1){
