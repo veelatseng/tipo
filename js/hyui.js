@@ -211,6 +211,7 @@ $(function() {
             _searchCtrl.off().on('click', function(e) {
                 if (!search_mode) {
                     $('.m_search').stop(true, false).slideDown('400', 'easeOutQuint');
+                    _window.off("resize");
                     // $('.m_search').find('input[type="text"]').focus();
                     search_mode = true;
                 } else {
