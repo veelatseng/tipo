@@ -41,7 +41,15 @@ a.goCenter {
 		a{
 			color:$primaryColor;
 			&:hover,&:focus {
-			color:$aHover;	
+				color:$aHover;	
+			}
+		}
+	}
+	.mp_banner {
+		.img-container {
+			display: none;
+			&:first-child {
+				display: block;
 			}
 		}
 	}
