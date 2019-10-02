@@ -27,6 +27,7 @@ body {
     line-height: 1.45em;
     font-family:$font-family;
     -webkit-text-size-adjust: none;
+    overflow-x: hidden;
 }
 a {
     @include aSetting();
