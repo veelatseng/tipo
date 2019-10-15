@@ -46,6 +46,7 @@
   width: 100%;
   padding-top: 4em;
   background: #000;
+  margin-top: -8em;
   @include gutter(0);
   @include screen('tablet') {
     padding-top: 0;

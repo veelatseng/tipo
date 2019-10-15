@@ -212,7 +212,7 @@ $(function() {
                 if (!search_mode) {
                     $('.m_search').stop(true, false).slideDown('400', 'easeOutQuint');
                     _window.off("resize");
-                    // $('.m_search').find('input[type="text"]').focus();
+                    $('.m_search').find('input[type="text"]').focus();
                     search_mode = true;
                 } else {
                     $('.m_search').hide();
@@ -790,7 +790,7 @@ $(function() {
         // alt+S 查詢
         if (e.altKey && e.keyCode == 83) {
             $('html, body').animate({ scrollTop: 0 }, 200, 'easeOutExpo');
-            $('.search').find('input[type="text"]').focus();
+            $('.search').css('display', 'block').find('input[type="text"]').focus();
         }
         // alt+U header
         if (e.altKey && e.keyCode == 85) {

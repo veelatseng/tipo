@@ -38,7 +38,7 @@ html {
 .main {
     @extend %clearfix;
     position: relative;
-    margin: -8em auto 0;
+    margin: 0 auto 0;
     padding: 0; // max-width: $container-max;
     // 可先設定一個中央區塊最大寬，限制accesskey對齊
 
@@ -70,8 +70,7 @@ html {
 ////////////////////////////////////////////////////////////
 // 為了與首頁區隔，請在內頁加上innerpage ClassName
 .innerpage {
-    padding-top: 150px;
-    margin: -150px auto 0;
+    margin: 0 auto 0;
     &:before{
         content: "";
         width: 100%;

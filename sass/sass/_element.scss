@@ -19,8 +19,11 @@ a:focus {
         display: none;
     }
     &:hover,&:focus{
-        color:$color-yellow;
+        color:$color-blue;
     }
+}
+.innerpage .accesskey{
+    top: 50px;
 }
 
 // more按鈕
