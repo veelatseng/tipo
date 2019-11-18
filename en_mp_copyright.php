@@ -53,10 +53,8 @@
         <section class="topic_page">
           <ul>
             <li>
-              <a href="" class="">
-                <span class="title">Copyright</span>
-                <span class="pic"><img src="images/copyright/t1.jpg" alt=""></span>
-              </a>
+              <span class="title">Copyright</span>
+              <span class="pic"><img src="images/copyright/t1.jpg" alt=""></span>
             </li>
             <li>
               <a href="">
