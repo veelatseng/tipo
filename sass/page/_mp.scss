@@ -48,8 +48,9 @@
   background: #000;
   margin-top: -8em;
   @include gutter(0);
-  @include screen('tablet') {
+  @media screen and (max-width: 768px) {
     padding-top: 0;
+    margin-top: 60px;
   }
   .img-container {
     @include aspect-ratio(5, 2);
