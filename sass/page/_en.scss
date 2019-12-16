@@ -363,3 +363,138 @@ footer {
 		margin-top: .5em;
 	}
 }
+.topic_page{
+	margin-top: 1em;
+	ul{
+		@include li-reset;
+		li{
+			@include make-xs-column(12);
+			@include make-sm-column(4);
+			@include make-md-column(4);
+			@include make-lg-column(4);
+			@include gutter(20px);
+			margin-bottom: 45px;
+			a{
+				display: block;
+				position: relative;
+				border: 2px solid #fff;
+				&:hover,&:focus{
+					span.pic{
+						opacity: .9;
+					}
+				}
+			}
+			span.pic{
+				position: relative;
+				display: block;
+				overflow: hidden;
+				z-index: 9;
+				opacity: 1;
+				transition: all 0.3s ;
+				img{
+					width: 100%;
+					display: block;
+				}
+			}
+			span.title{
+				position: absolute;
+				z-index: 10;
+				display: block;
+				background: rgba(0,0,0,.57);
+				color: #fff;
+				font-size: 1.125em;
+				left: 0;
+				bottom: 0;
+				right: 0;
+				font-weight: bold;
+				padding: 1em .5em;
+				text-align: center;
+				&:before{
+					content: "";
+					width: 62px;
+					height: 63px;
+					display: block;
+					position: absolute;
+					left: 22px;
+					bottom: 14px;
+					@include screen('tablet') {
+						display: none;
+					}
+				}
+			}
+			&:nth-child(1){
+				@include make-sm-column(12);
+				@include make-md-column(12);
+				@include make-lg-column(12);
+				span.title{
+					font-size: 3.125em;
+					background: none;
+					text-align: left;
+					left: 10px;
+					right: 10px;
+					&:before{
+						display: none;
+					}
+				}
+				span.pic{
+					padding-bottom: 9px;
+				}
+			}
+			&:nth-child(2){
+				span.title:before{
+					transform: rotate(50deg);
+				}
+			}
+			&:nth-child(4){
+				span.title:before{
+					transform: rotate(40deg);
+				}
+			}
+			&:nth-child(5){
+				span.title:before{
+					transform: rotate(40deg);
+				}
+			}
+			&:nth-child(6){
+				span.title:before{
+					transform: rotate(50deg);
+				}
+			}
+			&:nth-child(8){
+				span.title:before{
+					transform: rotate(50deg);
+				}
+			}
+		}
+	}
+}
+.topic_page{
+	&.copyright{
+		ul li{
+			span.title:before{
+				background: url(../images/copyright/triangle.png) no-repeat 0 0;
+			}
+			a:hover,a:focus{
+				border: 2px solid #00ac9c;
+			}
+			&:nth-child(1) span.pic{
+				background: #00ac9c;
+				background: linear-gradient(90deg, #00ac9c 33%, #17b274 100%);
+			}
+		}
+	}
+	&.trademarks{
+		ul li{
+			span.title:before{
+				background: url(../images/trademarks/triangle.png) no-repeat 0 0;
+			}
+			a:hover,a:focus{
+				border: 2px solid #214673;
+			}
+			&:nth-child(1) span.pic{
+				background: #214673;
+				background: linear-gradient(90deg, #214673 33%, #2d7bb5 100%);
+			}
+		}
+	}
+}

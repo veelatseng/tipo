@@ -50,28 +50,46 @@
           </div>
         </div>
         <!-- topic_page Start -->
-        <section class="topic_page copyright">
+        <section class="topic_page trademarks">
           <ul>
             <li>
-              <span class="title">Copyright</span>
-              <span class="pic"><img src="images/copyright/t1.jpg" alt=""></span>
+              <span class="title">Trademarks</span>
+              <span class="pic"><img src="images/trademarks/t1.jpg" alt=""></span>
             </li>
             <li>
               <a href="">
                 <span class="title">News</span>
-                <span class="pic"><img src="images/copyright/t2.jpg" alt=""></span>
+                <span class="pic"><img src="images/trademarks/t2.jpg" alt=""></span>
               </a>
             </li>
             <li>
               <a href="">
                 <span class="title">Laws& Regulations</span>
-                <span class="pic"><img src="images/copyright/t3.jpg" alt=""></span>
+                <span class="pic"><img src="images/trademarks/t3.jpg" alt=""></span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span class="title">Search for Trademarks</span>
+                <span class="pic"><img src="images/trademarks/t4.jpg" alt=""></span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span class="title">View Fee Schedule</span>
+                <span class="pic"><img src="images/trademarks/t5.jpg" alt=""></span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span class="title">Trademark Agent</span>
+                <span class="pic"><img src="images/trademarks/t6.jpg" alt=""></span>
               </a>
             </li>
             <li>
               <a href="">
                 <span class="title">FAQS</span>
-                <span class="pic"><img src="images/copyright/t4.jpg" alt=""></span>
+                <span class="pic"><img src="images/trademarks/t7.jpg" alt=""></span>
               </a>
             </li>
           </ul>
