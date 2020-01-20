@@ -364,6 +364,38 @@
         @include make-md-column(6);
         @include make-lg-column(6);
         @include gutter;
+        margin-bottom: 0;
+        .item{
+          display: block;
+          margin-bottom: .5em;
+          @extend %clearfix;
+          @include screen('mobile') {
+            margin-bottom: .5em;
+          }      
+          .img-container {
+            width: 40%;
+            float: left;
+            margin: 0px .5em .8em 0;
+            @include screen('mobile') {
+              margin: 0px 1em .5em 0;
+            }
+            img{
+              object-fit: cover;
+            }
+          }
+          &:nth-child(2n) {
+            .img-container {
+              float: right;
+              margin: 0px 0px .8em 1em;
+            }
+            @include screen('mobile') {
+              .img-container {
+                float: left;
+                margin: 0px 1em .5em 0;
+              }
+            }
+          }
+        }
       }
       .col:first-child {
         &:before {
@@ -379,78 +411,89 @@
             display: none;
           }
         }
-        .img-container {
-          .title {
-            display: block;
-            background: rgba(0, 0, 0, .5);
-            padding: 0 .5em;
-            color: #FFF;
-            position: absolute;
-            bottom: 0;
-            left: 0;
+        .item{
+          .img-container {
             width: 100%;
-            line-height: 3em;
-            z-index: 1;
-            @include text-overflow;
-          }
-          time {
-            position: absolute;
-            z-index: 1;
-            right: 0;
-            top: .5em;
-            width: 100px;
-            color: #FFF !important;
-            text-shadow: 0px 0px 3px #000;
-            @include screen('mobile') {
-              left: 9em;
-              top: .3em;
-            }
-          }
-          .tag {
-            position: absolute;
-            z-index: 1;
-            max-width: 8em;
-            right: 120px;
-            top: .5em;
-            text-align: right;
-            color: #FFF;
-            background: $aColor;
-            text-shadow: 0px 0px 3px #000;
-            @include screen('mobile') {
-              text-align: left;
+            .title {
+              display: block;
+              background: rgba(0, 0, 0, .5);
+              padding: 0 .5em;
+              color: #FFF;
+              position: absolute;
+              bottom: 0;
               left: 0;
-              top: 0;
+              width: 100%;
+              line-height: 3em;
+              z-index: 1;
+              @include text-overflow;
+            }
+            time {
+              position: absolute;
+              z-index: 1;
+              right: 0;
+              top: .5em;
+              width: 100px;
+              color: #FFF !important;
+              text-shadow: 0px 0px 3px #000;
+              @include screen('mobile') {
+                left: 9em;
+                top: .3em;
+              }
+            }
+            .tag {
+              position: absolute;
+              z-index: 1;
+              max-width: 8em;
+              right: 120px;
+              top: .5em;
+              text-align: right;
+              color: #FFF;
+              background: $aColor;
+              text-shadow: 0px 0px 3px #000;
+              @include screen('mobile') {
+                text-align: left;
+                left: 0;
+                top: 0;
+              }
             }
           }
         }
       }
-      .col:nth-child(2n) {
+      .col2{
+        @include make-xs-column(12);
+        @include make-sm-column(12);
+        @include make-md-column(12);
+        @include make-lg-column(12);
+        @include gutter(0);
         .item {
-          display: block;
+          @include make-xs-column(12);
+          @include make-sm-column(6);
+          @include make-md-column(6);
+          @include make-lg-column(6);
+          @include gutter;
           margin-bottom: .5em;
           @include screen('mobile') {
             margin-bottom: .5em;
           }
-          @extend %clearfix;
           .img-container {
             width: 40%;
-            float: left;
-            margin: 0px .5em .8em 0;
+            float: right;
+            margin: 0px 0px .8em 1em;
             @include screen('mobile') {
+              float: left;
               margin: 0px 1em .5em 0;
             }
+            img{
+              object-fit: cover;
+            }
           }
-          &:nth-child(2n) {
-            .img-container {
-              float: right;
-              margin: 0px 0px .8em 1em;
-            }
-            @include screen('mobile') {
-              .img-container {
-                float: left;
-                margin: 0px 1em .5em 0;
-              }
-            }
+        }
+      }
+      .col2:nth-child(2n){
+        .item {
+          .img-container {
+            float: left;
+            margin: 0px 1em .8em 0;
           }
         }
       }
