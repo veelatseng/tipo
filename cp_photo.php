@@ -56,7 +56,7 @@
             <div class="Slider-for">
               <div>
                 <div class="img-container">
-                  <img src="https://assets.imgix.net/examples/kingfisher.jpg?w=500&h=480&fit=crop&auto=format%2Cenhance&usm=20">
+                  <img src="http://design.hyweb.com.tw/hyui/images/doraemon1.png">
                 </div>
                 <p>第一張圖說</p>
               </div>
@@ -91,7 +91,7 @@
             <div class="Slider-nav">
               <div>
                 <div class="img-container">
-                  <img src="https://assets.imgix.net/examples/kingfisher.jpg?w=800&h=480&fit=crop&auto=format%2Cenhance&usm=20">
+                  <img src="http://design.hyweb.com.tw/hyui/images/doraemon1.png">
                 </div>
                 <p>第一張圖說</p>
               </div>

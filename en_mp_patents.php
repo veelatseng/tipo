@@ -50,58 +50,76 @@
           </div>
         </div>
         <!-- topic_page Start -->
-        <section class="topic_page trademarks">
+        <section class="topic_page patents">
           <ul>
             <li>
-              <span class="title">Trademarks</span>
-              <span class="pic"><img src="images/trademarks/t1.jpg" alt=""></span>
+              <span class="title">Patents</span>
+              <span class="pic"><img src="images/patents/t1.jpg" alt=""></span>
             </li>
             <li>
               <a href="">
                 <span class="title">News</span>
-                <span class="pic"><img src="images/trademarks/t2.jpg" alt=""></span>
+                <span class="pic"><img src="images/patents/t2.jpg" alt=""></span>
               </a>
             </li>
             <li>
               <a href="">
                 <span class="title">Laws& Regulations</span>
-                <span class="pic"><img src="images/trademarks/t3.jpg" alt=""></span>
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <span class="title">Search for Trademarks</span>
-                <span class="pic"><img src="images/trademarks/t4.jpg" alt=""></span>
+                <span class="pic"><img src="images/patents/t3.jpg" alt=""></span>
               </a>
             </li>
             <li>
               <a href="">
                 <span class="title">View Fee Schedule</span>
-                <span class="pic"><img src="images/trademarks/t5.jpg" alt=""></span>
+                <span class="pic"><img src="images/patents/t4.jpg" alt=""></span>
               </a>
             </li>
             <li>
               <a href="">
-                <span class="title">Trademark Agent</span>
-                <span class="pic"><img src="images/trademarks/t6.jpg" alt=""></span>
+                <span class="title">Patent Examination and Administrative Remedy</span>
+                <span class="pic"><img src="images/patents/t5.jpg" alt=""></span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span class="title">Accelerated Examination Program (AEP)</span>
+                <span class="pic"><img src="images/patents/t6.jpg" alt=""></span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span class="title">Patent Prosecution Highway (PPH)</span>
+                <span class="pic"><img src="images/patents/t7.jpg" alt=""></span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span class="title">TW-Support Using the PPH Agreement (TW-SUPA)</span>
+                <span class="pic"><img src="images/patents/t8.jpg" alt=""></span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span class="title">Bio-Materials Patent Service</span>
+                <span class="pic"><img src="images/patents/t9.jpg" alt=""></span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span class="title">Collective Interviews Program for Relevant Invention Patent Applications (CIP)</span>
+                <span class="pic"><img src="images/patents/t10.jpg" alt=""></span>
               </a>
             </li>
             <li>
               <a href="">
                 <span class="title">FAQS</span>
-                <span class="pic"><img src="images/trademarks/t7.jpg" alt=""></span>
+                <span class="pic"><img src="images/patents/t11.jpg" alt=""></span>
               </a>
             </li>
             <li>
               <a href="">
-                <span class="title">Trademark Agent</span>
-                <span class="pic"><img src="images/trademarks/t6.jpg" alt=""></span>
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <span class="title">FAQS</span>
-                <span class="pic"><img src="images/trademarks/t7.jpg" alt=""></span>
+                <span class="title">Links</span>
+                <span class="pic"><img src="images/patents/t3.jpg" alt=""></span>
               </a>
             </li>
           </ul>
