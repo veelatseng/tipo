@@ -386,6 +386,8 @@ footer {
 			@include screen('mobile') {
 				width: 100%;
 				margin-right: 0;
+				margin-bottom: 15px;
+				padding: 0;
 			}
 			a{
 				display: block;
@@ -408,7 +410,7 @@ footer {
 				background: #ccc;
 				img{
 					width: 100%;
-					display: block;
+					display: block;	
 				}
 			}
 			span.title{
@@ -424,6 +426,9 @@ footer {
 				font-weight: bold;
 				padding: 1em 1.5em 1em 3.5em;
 				text-align: center;
+				@include screen('tablet') {
+					padding: 1em 1.5em;
+				}
 				&:before{
 					content: "";
 					width: 62px;
@@ -450,6 +455,9 @@ footer {
 					left: 10px;
 					right: 10px;
 					padding: 1em;
+					@include screen('mobile') {
+						font-size: 2em;
+					}
 					&:before{
 						display: none;
 					}
@@ -457,6 +465,9 @@ footer {
 				span.pic{
 					padding-bottom: 9px;
 					min-height: 225px;
+					@include screen('tablet') {
+						min-height: auto;
+					}
 				}
 			}
 			&:nth-child(2){
