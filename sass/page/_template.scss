@@ -43,7 +43,7 @@ html {
     // 可先設定一個中央區塊最大寬，限制accesskey對齊
 
     @include screen('mobile') {
-        padding-top: 60px;
+        padding-top: 10px;
         margin-top: 0;
     }
     // 內頁標題設定
