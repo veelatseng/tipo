@@ -316,7 +316,7 @@
         font-size: 1.125rem;
         display: flex;
         &:nth-child(even) {
-          background: #666 url(../images/edm/arrow.png) no-repeat right center;
+          background: #2e9db2 url(../images/edm/arrow.png) no-repeat right center;
         }
         .classify {
           a {
@@ -344,7 +344,7 @@
             padding-left: 12px;
             &:hover,
             &:focus {
-              background: #333;
+              background: #106478 url(../images/edm/arrow.png) no-repeat right center;
             }
           }
         }

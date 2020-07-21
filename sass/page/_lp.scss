@@ -15,8 +15,8 @@
         //   text-decoration: none;
         // }
         &.fw {
-          width: 40px;
-          height: 40px;
+          width: 30px;
+          height: 30px;
           display: block;
           border-radius: 50%;
           background: $primaryColor;
@@ -36,6 +36,29 @@
           }
           &:hover,&:focus{
             background: $secondaryColor;
+          }
+        }
+        &.sdoc {
+          width: 30px;
+          height: 30px;
+          display: block;
+          border-radius: 50%;
+          background: $secondaryColor;
+          text-indent: -9999px;
+          position: relative;
+          margin: 0 auto;
+          &:before{
+            content: "";
+            position: absolute;
+            width: 60%;
+            height: 60%;
+            top: 20%;
+            left: 20%;
+            background: url(../images/basic/icon_search.png) no-repeat center center;
+            background-size: 100%;
+          }
+          &:hover,&:focus{
+            background: $primaryColor;
           }
         }
       }

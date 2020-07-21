@@ -64,6 +64,7 @@
                   <th>標題</th>
                   <th>日期</th>
                   <th>轉寄</th>
+                  <th>轉寄</th>
                   <th>瀏覽人次</th>
                 </tr>
               </thead>
@@ -73,6 +74,7 @@
                   <td data-title="標題"><a href="#">108年智慧財產專業培訓課程首次推出「人工智慧(AI)法律班」！</a></td>
                   <td data-title="日期" class="num">2019/04/05</td>
                   <td data-title="轉寄"><a href="" class="fw">轉寄</a></td>
+                  <td data-title="轉寄"><a href="" class="sdoc">轉寄</a></td>
                   <td data-title="瀏覽人次" class="num">2278</td>
                 </tr>   
                 <tr>
@@ -80,6 +82,7 @@
                   <td data-title="標題"><a href="#">108年智慧財產專業培訓課程首次推出「人工智慧(AI)法律班」！</a></td>
                   <td data-title="日期" class="num">2019/04/05</td>
                   <td data-title="轉寄"><a href="" class="fw">轉寄</a></td>
+                  <td data-title="轉寄"><a href="" class="sdoc">轉寄</a></td>
                   <td data-title="瀏覽人次" class="num">2278</td>
                 </tr>   
                 <tr>
@@ -87,6 +90,7 @@
                   <td data-title="標題"><a href="#">108年智慧財產專業培訓課程首次推出「人工智慧(AI)法律班」！</a></td>
                   <td data-title="日期" class="num">2019/04/05</td>
                   <td data-title="轉寄"><a href="" class="fw">轉寄</a></td>
+                  <td data-title="轉寄"><a href="" class="sdoc">轉寄</a></td>
                   <td data-title="瀏覽人次" class="num">2278</td>
                 </tr>   
                 <tr>
@@ -94,6 +98,7 @@
                   <td data-title="標題"><a href="#">108年智慧財產專業培訓課程首次推出「人工智慧(AI)法律班」！</a></td>
                   <td data-title="日期" class="num">2019/04/05</td>
                   <td data-title="轉寄"><a href="" class="fw">轉寄</a></td>
+                  <td data-title="轉寄"><a href="" class="sdoc">轉寄</a></td>
                   <td data-title="瀏覽人次" class="num">2278</td>
                 </tr>   
                 <tr>
@@ -101,6 +106,7 @@
                   <td data-title="標題"><a href="#">108年智慧財產專業培訓課程首次推出「人工智慧(AI)法律班」！</a></td>
                   <td data-title="日期" class="num">2019/04/05</td>
                   <td data-title="轉寄"><a href="" class="fw">轉寄</a></td>
+                  <td data-title="轉寄"><a href="" class="sdoc">轉寄</a></td>
                   <td data-title="瀏覽人次" class="num">2278</td>
                 </tr>   
                 <tr>
@@ -108,6 +114,7 @@
                   <td data-title="標題"><a href="#">108年智慧財產專業培訓課程首次推出「人工智慧(AI)法律班」！</a></td>
                   <td data-title="日期" class="num">2019/04/05</td>
                   <td data-title="轉寄"><a href="" class="fw">轉寄</a></td>
+                  <td data-title="轉寄"><a href="" class="sdoc">轉寄</a></td>
                   <td data-title="瀏覽人次" class="num">2278</td>
                 </tr>   
                 <tr>
@@ -115,6 +122,7 @@
                   <td data-title="標題"><a href="#">108年智慧財產專業培訓課程首次推出「人工智慧(AI)法律班」！</a></td>
                   <td data-title="日期" class="num">2019/04/05</td>
                   <td data-title="轉寄"><a href="" class="fw">轉寄</a></td>
+                  <td data-title="轉寄"><a href="" class="sdoc">轉寄</a></td>
                   <td data-title="瀏覽人次" class="num">2278</td>
                 </tr>   
                 <tr>
@@ -122,6 +130,7 @@
                   <td data-title="標題"><a href="#">108年智慧財產專業培訓課程首次推出「人工智慧(AI)法律班」！</a></td>
                   <td data-title="日期" class="num">2019/04/05</td>
                   <td data-title="轉寄"><a href="" class="fw">轉寄</a></td>
+                  <td data-title="轉寄"><a href="" class="sdoc">轉寄</a></td>
                   <td data-title="瀏覽人次" class="num">2278</td>
                 </tr>   
                 <tr>
@@ -129,6 +138,7 @@
                   <td data-title="標題"><a href="#">108年智慧財產專業培訓課程首次推出「人工智慧(AI)法律班」！</a></td>
                   <td data-title="日期" class="num">2019/04/05</td>
                   <td data-title="轉寄"><a href="" class="fw">轉寄</a></td>
+                  <td data-title="轉寄"><a href="" class="sdoc">轉寄</a></td>
                   <td data-title="瀏覽人次" class="num">2278</td>
                 </tr>   
                 <tr>
@@ -136,6 +146,7 @@
                   <td data-title="標題"><a href="#">108年智慧財產專業培訓課程首次推出「人工智慧(AI)法律班」！</a></td>
                   <td data-title="日期" class="num">2019/04/05</td>
                   <td data-title="轉寄"><a href="" class="fw">轉寄</a></td>
+                  <td data-title="轉寄"><a href="" class="sdoc">轉寄</a></td>
                   <td data-title="瀏覽人次" class="num">2278</td>
                 </tr>     
               </tbody>
