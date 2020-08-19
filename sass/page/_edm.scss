@@ -166,6 +166,7 @@
     text-align: justify;
     line-height: 180%;
     font-size: 1.125em;
+    overflow: hidden;
   }
   ul {
     @include li-reset;
@@ -325,7 +326,7 @@
         white-space: nowrap;
         line-height: 4.5em;
         margin-bottom: 8px;
-        font-size: 1.125rem;
+        
         display: flex;
         &:nth-child(even) {
           background: #2e9db2 url(../images/edm/arrow.png) no-repeat right center;
@@ -336,6 +337,7 @@
             padding: 0 13px 0 25px;
             color: #fff268;
             display: block;
+            font-size: 1.25rem;
             &:hover,
             &:focus {
               background: #333;
@@ -345,6 +347,7 @@
         .block_text {
           flex-grow: 1;
           min-width: 0;
+          font-size: 1.25rem;
           a {
             color: #fff;
             line-height: 4.5em;
