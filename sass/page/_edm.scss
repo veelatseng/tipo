@@ -304,13 +304,13 @@
     }
     .block_pic {
       width: 100%;
-      max-height: 200px;
+      height: 200px;
       display: block;
       overflow: hidden;
       margin-bottom: .5em;
       @include screen('mobile') {
         margin-bottom: 1em;
-        max-height: none;
+        height: auto;
       }
       img {
         width: 100%;
