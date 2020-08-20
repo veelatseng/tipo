@@ -208,7 +208,7 @@
     .block_pic {
       margin-left: 32px;
       width: 508px;
-      height: 350px;
+      height: 400px;
       flex-shrink: 0;
       @include screen('mobile') {
         width: 100%;
@@ -219,8 +219,10 @@
       }
       img {
         width: 100%;
-        height: auto;
-        max-height: 100%;
+        height: 100%;
+        @include screen('mobile') {
+          height: auto;
+        }
       }
     }
   }
@@ -249,8 +251,10 @@
       }
       img {
         width: 100%;
-        height: auto;
-        max-height: 100%;
+        height: 100%;
+        @include screen('mobile') {
+          height: auto;
+        }
       }
     }
     .block_content {
@@ -314,8 +318,10 @@
       }
       img {
         width: 100%;
-        height: auto;
-        max-height: 100%;
+        height: 100%;
+        @include screen('mobile') {
+          height: auto;
+        }
       }
     }
   }
