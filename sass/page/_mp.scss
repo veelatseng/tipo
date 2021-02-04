@@ -365,54 +365,43 @@
         @include make-lg-column(6);
         @include gutter;
         margin-bottom: 0;
+        // .item{
+        //   display: block;
+        //   margin-bottom: .5em;
+        //   @extend %clearfix;
+        //   @include screen('mobile') {
+        //     margin-bottom: .5em;
+        //   }      
+        //   .img-container {
+        //     width: 40%;
+        //     float: left;
+        //     margin: 0px .5em .8em 0;
+        //     @include screen('mobile') {
+        //       margin: 0px 1em .5em 0;
+        //     }
+        //     img{
+        //       object-fit: fill;
+        //     }
+        //   }
+        //   &:nth-child(2n) {
+        //     .img-container {
+        //       float: right;
+        //       margin: 0px 0px .8em 1em;
+        //     }
+        //     @include screen('mobile') {
+        //       .img-container {
+        //         float: left;
+        //         margin: 0px 1em .5em 0;
+        //       }
+        //     }
+        //   }
+        // }
         .item{
-          display: block;
-          margin-bottom: .5em;
-          @extend %clearfix;
+          margin-bottom: 1.5rem;
           @include screen('mobile') {
-            margin-bottom: .5em;
-          }      
-          .img-container {
-            width: 40%;
-            float: left;
-            margin: 0px .5em .8em 0;
-            @include screen('mobile') {
-              margin: 0px 1em .5em 0;
-            }
-            img{
-              object-fit: fill;
-            }
+            margin-bottom: 1rem;
           }
-          &:nth-child(2n) {
-            .img-container {
-              float: right;
-              margin: 0px 0px .8em 1em;
-            }
-            @include screen('mobile') {
-              .img-container {
-                float: left;
-                margin: 0px 1em .5em 0;
-              }
-            }
-          }
-        }
-      }
-      .col:first-child {
-        &:before {
-          content: "";
-          display: block;
-          background: url(../images/engslogan_news.png) no-repeat center center;
-          background-size: contain;
-          @include aspect-ratio(2, 1);
-          width: 100%;
-          min-height: 120px;
-          margin-bottom: 1em;
-          @include screen('mobile') {
-            display: none;
-          }
-        }
-        .item{
-          .img-container {
+          .img-container{
             width: 100%;
             .title {
               display: block;
@@ -456,47 +445,81 @@
                 top: 0;
               }
             }
-          }
-        }
-      }
-      .col2{
-        @include make-xs-column(12);
-        @include make-sm-column(12);
-        @include make-md-column(12);
-        @include make-lg-column(12);
-        @include gutter(0);
-        .item {
-          @include make-xs-column(12);
-          @include make-sm-column(6);
-          @include make-md-column(6);
-          @include make-lg-column(6);
-          @include gutter;
-          margin-bottom: .5em;
-          @include screen('mobile') {
-            margin-bottom: .5em;
-          }
-          .img-container {
-            width: 40%;
-            float: right;
-            margin: 0px 0px .8em 1em;
-            @include screen('mobile') {
-              float: left;
-              margin: 0px 1em .5em 0;
-            }
             img{
               object-fit: fill;
             }
           }
         }
       }
-      .col2:nth-child(2n){
-        .item {
-          .img-container {
-            float: left;
-            margin: 0px 1em .8em 0;
+      .col:first-child {
+        &:before {
+          content: "";
+          display: block;
+          background: url(../images/engslogan_news.png) no-repeat center center;
+          background-size: contain;
+          @include aspect-ratio(2, 1);
+          width: 100%;
+          min-height: 120px;
+          margin-bottom: 1em;
+          @include screen('mobile') {
+            display: none;
+          }
+        }
+        .item{
+          width: 48%;
+          float: left;
+          margin-right: 4%;
+          margin-bottom: 1.5rem;
+          @include screen('mobile') {
+            width: 100%;
+            margin-right: 0;
+          }
+          &:first-child{
+            width: 100%;
+          }
+          &:last-child{
+            margin-right: 0;
           }
         }
       }
+      // .col2{
+      //   @include make-xs-column(12);
+      //   @include make-sm-column(12);
+      //   @include make-md-column(12);
+      //   @include make-lg-column(12);
+      //   @include gutter(0);
+      //   .item {
+      //     @include make-xs-column(12);
+      //     @include make-sm-column(6);
+      //     @include make-md-column(6);
+      //     @include make-lg-column(6);
+      //     @include gutter;
+      //     margin-bottom: .5em;
+      //     @include screen('mobile') {
+      //       margin-bottom: .5em;
+      //     }
+      //     .img-container {
+      //       width: 40%;
+      //       float: right;
+      //       margin: 0px 0px .8em 1em;
+      //       @include screen('mobile') {
+      //         float: left;
+      //         margin: 0px 1em .5em 0;
+      //       }
+      //       img{
+      //         object-fit: fill;
+      //       }
+      //     }
+      //   }
+      // }
+      // .col2:nth-child(2n){
+      //   .item {
+      //     .img-container {
+      //       float: left;
+      //       margin: 0px 1em .8em 0;
+      //     }
+      //   }
+      // }
       .tag {
         display: inline-block;
         padding: .2em .5em;
@@ -525,12 +548,13 @@
       .title {
         display: block;
         overflow: hidden;
-        font-weight: bold;
+        // font-weight: bold;
+        font-size: 1.125rem;
         a {
           display: block;
           margin: .2em 0;
           overflow: hidden;
-          height: 3em;
+          // height: 3em;
           line-height: 1.5em;
           color: #222;
           &:hover, &:focus {
@@ -560,9 +584,6 @@
             text-overflow: ellipsis;
             color: #222;
           }
-        }
-        .item{
-          margin-bottom: 1em;
         }
         p {
           max-height: 8em;
