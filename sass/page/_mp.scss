@@ -398,8 +398,10 @@
         // }
         .item{
           margin-bottom: 1.5rem;
-          @include screen('mobile') {
+          min-height: 138px;
+          @include screen('tablet') {
             margin-bottom: 1rem;
+            min-height: auto;
           }
           .img-container{
             width: 100%;
@@ -553,7 +555,7 @@
         a {
           margin: .2em 0;
           overflow: hidden;
-          height: 3em;
+          max-height: 3em;
           line-height: 1.5em;
           text-overflow: ellipsis;
           display: -webkit-box;
