@@ -365,46 +365,65 @@
         @include make-lg-column(6);
         @include gutter;
         margin-bottom: 0;
-        // .item{
-        //   display: block;
-        //   margin-bottom: .5em;
-        //   @extend %clearfix;
-        //   @include screen('mobile') {
-        //     margin-bottom: .5em;
-        //   }      
-        //   .img-container {
-        //     width: 40%;
-        //     float: left;
-        //     margin: 0px .5em .8em 0;
-        //     @include screen('mobile') {
-        //       margin: 0px 1em .5em 0;
-        //     }
-        //     img{
-        //       object-fit: fill;
-        //     }
-        //   }
-        //   &:nth-child(2n) {
-        //     .img-container {
-        //       float: right;
-        //       margin: 0px 0px .8em 1em;
-        //     }
-        //     @include screen('mobile') {
-        //       .img-container {
-        //         float: left;
-        //         margin: 0px 1em .5em 0;
-        //       }
-        //     }
-        //   }
-        // }
         .item{
-          margin-bottom: 1.5rem;
+          display: block;    
+          margin-bottom: 1.7rem;
           min-height: 138px;
+          @extend %clearfix;
           @include screen('tablet') {
             margin-bottom: 1rem;
             min-height: auto;
           }
+          @include screen('mobile') {
+            margin-bottom: .5em;
+          }      
+          .img-container {
+            width: 30%;
+            float: right;
+            margin: 0px 0 0 .5em;
+            @include screen('mobile') {
+              margin: 0px 1em .5em 0;
+            }
+            img{
+              object-fit: fill;
+            }
+          }
+          // &:nth-child(2n) {
+          //   .img-container {
+          //     float: right;
+          //     margin: 0px 0px .8em 1em;
+          //   }
+          //   @include screen('mobile') {
+          //     .img-container {
+          //       float: left;
+          //       margin: 0px 1em .5em 0;
+          //     }
+          //   }
+          // }
+        }
+      }
+      .col:first-child {
+        &:before {
+          content: "";
+          display: block;
+          background: url(../images/engslogan_news.png) no-repeat center center;
+          background-size: contain;
+          @include aspect-ratio(2, 1);
+          width: 100%;
+          min-height: 120px;
+          margin-bottom: 1em;
+          @include screen('mobile') {
+            display: none;
+          }
+        }
+        .item{
+          width: 48%;
+          float: left;
+          margin-right: 4%;
+          margin-bottom: 1.5rem;
           .img-container{
             width: 100%;
+            margin: 0;
             .title {
               display: block;
               background: rgba(0, 0, 0, .5);
@@ -451,27 +470,6 @@
               object-fit: fill;
             }
           }
-        }
-      }
-      .col:first-child {
-        &:before {
-          content: "";
-          display: block;
-          background: url(../images/engslogan_news.png) no-repeat center center;
-          background-size: contain;
-          @include aspect-ratio(2, 1);
-          width: 100%;
-          min-height: 120px;
-          margin-bottom: 1em;
-          @include screen('mobile') {
-            display: none;
-          }
-        }
-        .item{
-          width: 48%;
-          float: left;
-          margin-right: 4%;
-          margin-bottom: 1.5rem;
           @include screen('mobile') {
             width: 100%;
             margin-right: 0;
@@ -481,6 +479,7 @@
           }
           &:last-child{
             margin-right: 0;
+            clear: none;
           }
         }
       }
