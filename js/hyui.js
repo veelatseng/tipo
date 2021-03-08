@@ -113,8 +113,8 @@ $(function() {
     // $('.btn_talent').children('a').keyup(function(e) {
     //     $('.talent').fadeIn().find('a:first').focus();
     // });
-    $('.talent').find('a.more').focusout(function(e) {
-        $('.talent').fadeOut();
+    $('.subquick.talent').find('a.more').focusout(function(e) {
+        $('.subquick.talent').fadeOut();
         $('.fixed_sidebar').show();
         $('.btn_talent a').blur();
         $('.btn_trademark a').focus();
@@ -124,8 +124,8 @@ $(function() {
     // $('.btn_trademark').children('a').keyup(function(e) {
     //     $('.trademark').fadeIn().find('a:first').focus();
     // });
-    $('.trademark').find('a.more').focusout(function(e) {
-        $('.trademark').fadeOut();
+    $('.subquick.trademark').find('a.more').focusout(function(e) {
+        $('.subquick.trademark').fadeOut();
         $('.fixed_sidebar').show();
         $('.btn_trademark a').blur();
         $('.btn_copyright a').focus();
@@ -135,8 +135,8 @@ $(function() {
     // $('.btn_copyright').children('a').keyup(function(e) {
     //     $('.copyright').fadeIn().find('a:first').focus();
     // });
-    $('.copyright').find('a.more').focusout(function(e) {
-        $('.copyright').fadeOut();
+    $('.subquick.copyright').find('a.more').focusout(function(e) {
+        $('.subquick.copyright').fadeOut();
         $('.fixed_sidebar').show();
         $('.btn_copyright a').blur();
         _html.removeClass('noscroll');
@@ -230,21 +230,21 @@ $(function() {
                 e.preventDefault();
             });
             $('.btn_talent').off().click(function(e) {
-                $('.talent').fadeIn();
+                $('.subquick.talent').fadeIn();
                 _html.addClass('noscroll');
                 _menu.hide();
                 $('.fixed_sidebar').hide();
                 e.preventDefault();
             });
             $('.btn_trademark').off().click(function(e) {
-                $('.trademark').fadeIn();
+                $('.subquick.trademark').fadeIn();
                 _html.addClass('noscroll');
                 _menu.hide();
                 $('.fixed_sidebar').hide();
                 e.preventDefault();
             });
             $('.btn_copyright').off().click(function(e) {
-                $('.copyright').fadeIn();
+                $('.subquick.copyright').fadeIn();
                 _html.addClass('noscroll');
                 _menu.hide();
                 $('.fixed_sidebar').hide();
