@@ -378,11 +378,14 @@
             margin-bottom: .5em;
           }      
           .img-container {
-            width: 25%;
+            // width: 35%;
+            width: 39.9%;
             float: right;
-            margin: 26px 0 0 .5em;
+            // margin: 26px 0 0 .5em;
+            margin: 0 0 0 .5em;
             @include screen('mobile') {
               margin: 0px 1em .5em 0;
+              float: left;
             }
             img{
               object-fit: fill;
@@ -435,18 +438,22 @@
               width: 100%;
               line-height: 3em;
               z-index: 1;
+              font-size: 1rem;
               @include text-overflow;
             }
             time {
               position: absolute;
               z-index: 1;
-              right: 0;
+              right: .5em;
               top: .5em;
-              width: 100px;
+              // width: 100px;
               color: #FFF !important;
-              text-shadow: 0px 0px 3px #000;
+              text-shadow: 0px 0px 4px #000;
+              background: rgba(0,0,0,.3);
+              padding: 2px 6px;
+              border-radius: 6px;
               @include screen('mobile') {
-                left: 9em;
+                // left: 9em;
                 top: .3em;
               }
             }
@@ -476,6 +483,11 @@
           }
           &:first-child{
             width: 100%;
+            .img-container{
+              .title{
+                font-size: 1.125rem;
+              }
+            }
           }
           &:last-child{
             margin-right: 0;
@@ -513,14 +525,14 @@
       //     }
       //   }
       // }
-      // .col2:nth-child(2n){
-      //   .item {
-      //     .img-container {
-      //       float: left;
-      //       margin: 0px 1em .8em 0;
-      //     }
-      //   }
-      // }
+      .col2{
+        .item:nth-child(2n) {
+          .img-container {
+            float: left;
+            margin: 0px 1em .8em 0;
+          }
+        }
+      }
       .tag {
         display: inline-block;
         padding: .2em .5em;
@@ -570,11 +582,11 @@
         color: #555;
         font-size: .938em;
         margin: 0;
-        height: 3.2em;
+        height: 6.4em;
         line-height: 1.6em;
         text-overflow: ellipsis;
         display: -webkit-box;
-        -webkit-line-clamp: 2;
+        -webkit-line-clamp: 4;
         @include screen('mobile') {
           display: none;
         }
