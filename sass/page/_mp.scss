@@ -386,6 +386,8 @@
             float: right;
             // margin: 26px 0 0 .5em;
             margin: 0 0 0 .5em;
+            border-radius: 10px;
+            overflow: hidden;
             @include screen('mobile') {
               margin: 0px 1em .5em 0;
               float: left;
@@ -427,6 +429,8 @@
           float: left;
           margin-right: 4%;
           margin-bottom: 1.5rem;
+          border-radius: 10px;
+          overflow: hidden;
           .img-container{
             width: 100%;
             margin: 0;
