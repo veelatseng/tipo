@@ -47,6 +47,7 @@ a.more {
     -webkit-transition-duration: 0.2s;
     transition-duration: 0.2s;
     background: #fff;
+    border-radius: 30px;
     &:after {
         content: "";
         width: 12px;
@@ -77,13 +78,14 @@ a.more {
         transition-duration: 0.2s;
         -webkit-transition-timing-function: ease-out;
         transition-timing-function: ease-out;
+        border-radius: 30px;
     }
     &:hover,
     &:focus,
     &.active {
         color: white;
         background:$aHover;
-        border: 1px solid $aHover;
+        border: 2px solid $aHover;
         &:before {
             -webkit-transform: scale(1);
             transform: scale(1);
