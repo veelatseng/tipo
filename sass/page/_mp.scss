@@ -386,7 +386,6 @@
             float: right;
             // margin: 26px 0 0 .5em;
             margin: 0 0 0 .5em;
-            border-radius: 10px;
             overflow: hidden;
             @include screen('mobile') {
               margin: 0px 1em .5em 0;
@@ -429,7 +428,6 @@
           float: left;
           margin-right: 4%;
           margin-bottom: 1.5rem;
-          border-radius: 10px;
           overflow: hidden;
           .img-container{
             width: 100%;
@@ -599,24 +597,6 @@
         }
       }
     }
-    .global,.seminar{
-      .col:nth-child(2n) {
-        .title {
-          a {
-            height: 1.6em;
-            white-space: nowrap;
-            text-overflow: ellipsis;
-            color: #222;
-          }
-        }
-        p {
-          max-height: 8em;
-          @include screen('mobile') {
-            display: none;
-          }
-        }
-      }
-    }
     // 國際動態
     .global {
       .col:first-child {
@@ -629,6 +609,22 @@
           width: 100%;
           min-height: 120px;
           margin-bottom: 1em;   
+          @include screen('mobile') {
+            display: none;
+          }
+        }
+      }
+      .col:nth-child(2n) {
+        .title {
+          a {
+            height: 1.6em;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            color: #222;
+          }
+        }
+        p {
+          max-height: 8em;
           @include screen('mobile') {
             display: none;
           }
@@ -655,6 +651,21 @@
     // 研討會
     .seminar {
       .col:first-child {
+        .item{
+          min-height: auto;
+          margin-bottom: 1rem;
+          width: 100%;
+          &:last-child{
+            margin-right: 0;
+            clear: none;
+          }
+          p{
+            height: 1.6em;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            color: #222;
+          }
+        }
         &:before {
           content: "";
           display: block;
@@ -667,6 +678,27 @@
           @include screen('mobile') {
             display: none;
           }
+        }
+      }
+      .col:nth-child(2n) {
+        .item{
+          min-height: auto;
+          margin-bottom: 1rem;
+        }
+        .title {
+          a {
+            height: 1.6em;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            color: #222;
+            display: block;
+          }
+        }
+        p {
+          height: 1.6em;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          color: #222;
         }
       }
       // .col:nth-child(2) {
