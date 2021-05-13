@@ -653,7 +653,7 @@
       .col:first-child {
         .item{
           min-height: auto;
-          margin-bottom: 1rem;
+          margin-bottom: .5rem;
           width: 100%;
           &:last-child{
             margin-right: 0;
@@ -683,7 +683,7 @@
       .col:nth-child(2n) {
         .item{
           min-height: auto;
-          margin-bottom: 1rem;
+          margin-bottom: .57rem;
         }
         .title {
           a {
