@@ -12,10 +12,10 @@ table {
     }
     td {
         border-bottom: #ddd 1px solid;
-        word-break: break-all;
-        a {
-            word-break: break-all;
-        }
+        // word-break: break-all;
+        // a {
+        //     word-break: break-all;
+        // }
         &.center{
             text-align: center;
         }
