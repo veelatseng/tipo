@@ -115,7 +115,7 @@
               </li>
               <li>
                 <a href="#">
-                  <span class="num">7</span>
+                  <span class="num">2222</span>
                   <h3 class="title">2019台灣創新技術博覽會4/19起至6/30止開放報名，5/31前報名享有早鳥優惠，歡迎踴躍參展!</h3>
                   <span class="dept">資料服務組</span>
                   <time>108-04-29</time>
@@ -126,7 +126,7 @@
               </li>
               <li>
                 <a href="#">
-                  <span class="num">1</span>
+                  <span class="num">199</span>
                   <h3 class="title">2019台灣創新技術博覽會4/19起至6/30止開放報名，5/31前報名享有早鳥優惠，歡迎踴躍參展!</h3>
                   <span class="dept">資料服務組</span>
                   <time>108-04-29</time>
